@@ -86,9 +86,8 @@ export default function Home() {
     }}
   >
     <Logo src='/mushroom-cup-red.svg'/>
-    <Link href='/character'>
-      <Button>Login</Button>
-    </Link>
+    <Link></Link>
+    <Button>Login</Button>
   </Container>
   )
 }

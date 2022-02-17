@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 const LoadContainer = styled.div`
 background-color:#FB0A40;
@@ -86,9 +85,8 @@ export default function Home() {
     }}
   >
     <Logo src='/mushroom-cup-red.svg'/>
-    <Link href='/character'>
-      <Button>Login</Button>
-    </Link>
+    
+    <Button>Login</Button>
   </Container>
   )
 }
