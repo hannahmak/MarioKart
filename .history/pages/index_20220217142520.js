@@ -10,7 +10,9 @@ const Container = styled.div`
 
 export default function Home() {
   return ( <Container>
-    boop
+    {data.map((o,i)=><div key={i}>
+      {o.Vehicle}
+    </div>)}
   </Container>
   )
 }
