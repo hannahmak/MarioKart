@@ -1,0 +1,362 @@
+[
+ {
+   "Vehicle": "Standard Kart",
+   "Speed": 0,
+   "Acceleration": 0,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": 0,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Pipe Frame",
+   "Speed": -0.5,
+   "Acceleration": 0.5,
+   "Weight": -0.25,
+   "Handling": 0.5,
+   "Traction": 0.25,
+   "Mini Turbo": 0.5
+ },
+ {
+   "Vehicle": "Mach 8",
+   "Speed": 0,
+   "Acceleration": -0.25,
+   "Weight": 0.25,
+   "Handling": -0.25,
+   "Traction": 0.25,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Cat Cruiser",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": 0,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Steel Driver",
+   "Speed": 0.25,
+   "Acceleration": -0.75,
+   "Weight": 0.5,
+   "Handling": -0.5,
+   "Traction": 0,
+   "Mini Turbo": -0.5
+ },
+ {
+   "Vehicle": "Circuit Special",
+   "Speed": 0.5,
+   "Acceleration": -0.75,
+   "Weight": 0.25,
+   "Handling": -0.5,
+   "Traction": -0.5,
+   "Mini Turbo": -0.75
+ },
+ {
+   "Vehicle": "Tri-Speeder",
+   "Speed": 0.25,
+   "Acceleration": -0.75,
+   "Weight": 0.5,
+   "Handling": -0.5,
+   "Traction": 0,
+   "Mini Turbo": -0.5
+ },
+ {
+   "Vehicle": "Badwagon",
+   "Speed": 0.5,
+   "Acceleration": -1,
+   "Weight": 0.5,
+   "Handling": -0.75,
+   "Traction": 0.5,
+   "Mini Turbo": -1
+ },
+ {
+   "Vehicle": "Prancer",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": -0.25,
+   "Handling": 0,
+   "Traction": -0.25,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "Biddybuggy",
+   "Speed": -0.75,
+   "Acceleration": 0.75,
+   "Weight": -0.5,
+   "Handling": 0.5,
+   "Traction": 0.5,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Landship",
+   "Speed": -0.5,
+   "Acceleration": 0.5,
+   "Weight": -0.5,
+   "Handling": -0.5,
+   "Traction": 0.75,
+   "Mini Turbo": 0.5
+ },
+ {
+   "Vehicle": "Sneeker",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": -0.75,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "Sports Coupe",
+   "Speed": 0,
+   "Acceleration": -0.25,
+   "Weight": 0.25,
+   "Handling": -0.25,
+   "Traction": 0.25,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Gold Standard",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": -0.75,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "Mercedes GLA",
+   "Speed": 0.5,
+   "Acceleration": -1,
+   "Weight": 0.5,
+   "Handling": -0.75,
+   "Traction": 0.5,
+   "Mini Turbo": -1
+ },
+ {
+   "Vehicle": "Mercedes Silver Arrow",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": -0.25,
+   "Handling": 0.25,
+   "Traction": 0.5,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Mercedes 300 SL Roadster",
+   "Speed": 0,
+   "Acceleration": 0,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": 0,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Blue Falcon",
+   "Speed": 0.25,
+   "Acceleration": -0.25,
+   "Weight": -0.5,
+   "Handling": -0.25,
+   "Traction": 0.5,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Tanooki Kart",
+   "Speed": -0.25,
+   "Acceleration": -0.5,
+   "Weight": 0.25,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 1
+ },
+ {
+   "Vehicle": "B Dasher",
+   "Speed": 0.5,
+   "Acceleration": -0.75,
+   "Weight": 0.25,
+   "Handling": -0.5,
+   "Traction": -0.25,
+   "Mini Turbo": -0.5
+ },
+ {
+   "Vehicle": "Streetle",
+   "Speed": -0.5,
+   "Acceleration": 0.5,
+   "Weight": -0.5,
+   "Handling": -0.5,
+   "Traction": -0.25,
+   "Mini Turbo": 0.75
+ },
+ {
+   "Vehicle": "P-Wing",
+   "Speed": 0.5,
+   "Acceleration": -0.75,
+   "Weight": 0.25,
+   "Handling": -0.5,
+   "Traction": -0.25,
+   "Mini Turbo": -0.5
+ },
+ {
+   "Vehicle": "Koopa Clown",
+   "Speed": -0.25,
+   "Acceleration": -0.5,
+   "Weight": 0.25,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 1
+ },
+ {
+   "Vehicle": "Standard Bike",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": -0.25,
+   "Handling": 0.25,
+   "Traction": 0.5,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Comet",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": 0,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Sport Bike",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": -0.25,
+   "Handling": 0,
+   "Traction": -0.25,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "The Duke",
+   "Speed": 0,
+   "Acceleration": 0,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": 0,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Flame Rider",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": -0.25,
+   "Handling": 0.25,
+   "Traction": 0.5,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Varmint",
+   "Speed": -0.5,
+   "Acceleration": 0.5,
+   "Weight": -0.25,
+   "Handling": 0.5,
+   "Traction": 0.25,
+   "Mini Turbo": 0.5
+ },
+ {
+   "Vehicle": "Mr. Scooty",
+   "Speed": -0.75,
+   "Acceleration": 0.75,
+   "Weight": -0.5,
+   "Handling": 0.5,
+   "Traction": 0.25,
+   "Mini Turbo": 0.75
+ },
+ {
+   "Vehicle": "Jet Bike",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": -0.25,
+   "Handling": 0,
+   "Traction": -0.25,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "Yoshi Bike",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": 0,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Master Cycle",
+   "Speed": 0.25,
+   "Acceleration": -0.5,
+   "Weight": 0,
+   "Handling": 0,
+   "Traction": -0.75,
+   "Mini Turbo": -0.25
+ },
+ {
+   "Vehicle": "City Tripper",
+   "Speed": -0.5,
+   "Acceleration": 0.5,
+   "Weight": -0.25,
+   "Handling": 0.5,
+   "Traction": 0.25,
+   "Mini Turbo": 0.5
+ },
+ {
+   "Vehicle": "Standard ATV",
+   "Speed": 0.5,
+   "Acceleration": -1,
+   "Weight": 0.5,
+   "Handling": -0.75,
+   "Traction": 0.5,
+   "Mini Turbo": -1
+ },
+ {
+   "Vehicle": "Wild Wiggler",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": -0.25,
+   "Handling": 0.25,
+   "Traction": 0.5,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Teddy Buggy",
+   "Speed": -0.25,
+   "Acceleration": 0.25,
+   "Weight": 0,
+   "Handling": 0.25,
+   "Traction": 0,
+   "Mini Turbo": 0.25
+ },
+ {
+   "Vehicle": "Bone Rattler",
+   "Speed": 0.25,
+   "Acceleration": -0.75,
+   "Weight": 0.5,
+   "Handling": -0.5,
+   "Traction": 0,
+   "Mini Turbo": -0.5
+ },
+ {
+   "Vehicle": "Inkstriker",
+   "Speed": 0,
+   "Acceleration": -0.25,
+   "Weight": 0.25,
+   "Handling": -0.25,
+   "Traction": 0.25,
+   "Mini Turbo": 0
+ },
+ {
+   "Vehicle": "Splat Buggy",
+   "Speed": 0.25,
+   "Acceleration": -0.25,
+   "Weight": -0.5,
+   "Handling": -0.25,
+   "Traction": 0,
+   "Mini Turbo": -0.25
+ }
+]
