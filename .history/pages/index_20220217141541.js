@@ -9,8 +9,20 @@ const Container = styled.div`
 `
 
 export default function Home() {
+
+  const [data, setData] = useState([]);
+  useEffect(()=>{
+    const GetBody = async()=>{
+      const resp = await axios.get("../api/bodies");
+      setData(resp.data)
+      
+    }
+    GetBody();
+  }, []);
+
   return ( <Container>
-    boop
+
+    
   </Container>
   )
 }
