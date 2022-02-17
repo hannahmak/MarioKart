@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 
 const LoadContainer = styled.div`
 background-color:#FB0A40;
@@ -13,31 +12,16 @@ display:flex;
 flex-direction:column;
 width:100%;
 height:100vh;
+margin:0px;
 justify-content:center;
 align-items:center;
 `
 
 const Container = styled.div`
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-width:100%;
-height:100vh;
-gap:100px;
 `
 
 const Logo = styled.img `
 width:50%;
-`
-
-const Button = styled.button `
-width: 295px;
-height: 60px;
-background: #FB0A40;
-border-radius: 20px;
-border-style:none;
-color:white;
 `
 
 export default function Home() {
@@ -59,7 +43,7 @@ export default function Home() {
         opacity: 0,
 
         transition: {
-          duration:2,
+          duration:1,
           delay:1
         }
       }
@@ -85,10 +69,7 @@ export default function Home() {
       }
     }}
   >
-    <Logo src='/mushroom-cup-red.svg'/>
-    <Link href='/character'>
-      <Button>Login</Button>
-    </Link>
+    login
   </Container>
   )
 }
