@@ -17,6 +17,9 @@ justify-content:center;
 align-items:center;
 `
 
+//components
+import Card from '../comps/Card'
+
 const Container = styled.div`
 display:flex;
 flex-direction:column;
