@@ -12,7 +12,10 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/a/a8/StandardTiresMK8.png",
+   "Color":"#F3D25B"
+
  },
  {
    "Body": "Blue Standard",
@@ -27,7 +30,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/d/db/Blue_Standard.png",
+   "Color":"#D5D9DD"
  },
  {
    "Body": "Offroad",
@@ -42,7 +47,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/2/25/Off-Road.png",
+   "Color":"#FF3939"
  },
  {
    "Body": "Retro Offroad",
@@ -57,7 +64,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/4/48/Retro_Off-Road.png",
+   "Color":"#4B5EFF"
  },
  {
    "Body": "Monster",
@@ -72,7 +81,9 @@
    "Handling (Air)": -0.75,
    "Handling(Ground)": -0.75,
    "Traction": 0.75,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/2/29/MonsterTiresMK8.png",
+   "Color":"#FF2981"
  },
  {
    "Body": "Hot Monster",
@@ -87,7 +98,9 @@
    "Handling (Air)": -0.75,
    "Handling(Ground)": -0.75,
    "Traction": 0.75,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/d/d1/HotMonsterTiresMK8.png",
+   "Color":"#A53EC8"
  },
  {
    "Body": "Slick",
@@ -102,7 +115,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": -1,
-   "Mini Turbo": 0.25
+   "Mini Turbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/d/dd/SlickTiresMK8.png",
+   "Color":"#4EE12F"
  },
  {
    "Body": "Cyber Slick",
@@ -117,7 +132,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": -1,
-   "Mini Turbo": 0.25
+   "Mini Turbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/2/29/CyberSlickTiresMK8.png",
+   "Color":"#FF8718"
  },
  {
    "Body": "Roller",
@@ -132,7 +149,9 @@
    "Handling (Air)": 0.25,
    "Handling(Ground)": 0.25,
    "Traction": -0.25,
-   "Mini Turbo": 1.5
+   "Mini Turbo": 1.5,
+   "Image": "https://mario.wiki.gallery/images/7/76/RollerTiresMK8.png",
+   "Color":"#FFDD6D"
  },
  {
    "Body": "Azure Roller",
@@ -147,7 +166,9 @@
    "Handling (Air)": 0.25,
    "Handling(Ground)": 0.25,
    "Traction": -0.25,
-   "Mini Turbo": 1.5
+   "Mini Turbo": 1.5,
+   "Image": "https://mario.wiki.gallery/images/f/fe/AzureRollerTiresMK8.png",
+   "Color":"#FFA00E"
  },
  {
    "Body": "Button",
@@ -162,7 +183,9 @@
    "Handling (Air)": 0.25,
    "Handling(Ground)": 0.25,
    "Traction": -0.25,
-   "Mini Turbo": 1.5
+   "Mini Turbo": 1.5,
+   "Image": "https://mario.wiki.gallery/images/0/07/ButtonTiresMK8.png",
+   "Color":"#FF4648"
  },
  {
    "Body": "Slim",
@@ -177,7 +200,9 @@
    "Handling (Air)": 0.25,
    "Handling(Ground)": 0.25,
    "Traction": -0.5,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/f/f8/SlimTiresMK8.png",
+   "Color":"#FF4648"
  },
  {
    "Body": "Crimson Slim",
@@ -192,7 +217,9 @@
    "Handling (Air)": 0.25,
    "Handling(Ground)": 0.25,
    "Traction": -0.5,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/7/71/CrimsonSlimTiresMK8.png",
+   "Color":"#FFD472"
  },
  {
    "Body": "Metal",
@@ -207,7 +234,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": -0.5,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/9/96/MetalTiresMK8.png",
+   "Color":"#FFB72A"
  },
  {
    "Body": "Gold",
@@ -222,7 +251,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": 0,
    "Traction": -0.5,
-   "Mini Turbo": 0
+   "Mini Turbo": 0,
+   "Image": "https://mario.wiki.gallery/images/5/52/Gold_Tires_MK8.png",
+   "Color":"#FF3D3D"
  },
  {
    "Body": "Wood",
@@ -237,7 +268,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": -0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.75
+   "Mini Turbo": 0.75,
+   "Image": "https://mario.wiki.gallery/images/0/03/WoodTiresMK8.png",
+   "Color":"#BB7B47"
  },
  {
    "Body": "Sponge",
@@ -252,7 +285,9 @@
    "Handling (Air)": 0,
    "Handling(Ground)": -0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.75
+   "Mini Turbo": 0.75,
+   "Image": "https://mario.wiki.gallery/images/4/4c/SpongeTiresMK8.png",
+   "Color":"#DDF13B"
  },
  {
    "Body": "Cushion",
@@ -267,6 +302,8 @@
    "Handling (Air)": 0,
    "Handling(Ground)": -0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.75
+   "Mini Turbo": 0.75,
+   "Image": "https://mario.wiki.gallery/images/9/92/CushionTiresMK8.png",
+   "Color":"#FD8123"
  }
 ]
