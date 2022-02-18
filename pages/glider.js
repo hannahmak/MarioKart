@@ -71,7 +71,7 @@ export default function Glider() {
 
   return ( <Container>
     <TopBarCont>
-      <TopMenu link='/tire'/>
+      <TopMenu/>
     </TopBarCont>
     <HeadingCont>
       <ChooseCategory category='glider!'/>

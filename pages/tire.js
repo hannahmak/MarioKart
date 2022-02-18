@@ -72,7 +72,7 @@ export default function Tire() {
 
   return ( <Container>
     <TopBarCont>
-      <TopMenu link='/character'/>
+      <TopMenu/>
     </TopBarCont>
     <HeadingCont>
       <ChooseCategory category='tire!'/>

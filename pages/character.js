@@ -76,7 +76,7 @@ export default function Character() {
 
   return ( <Container>
     <TopBarCont>
-      <TopMenu link='./'/>
+      <TopMenu/>
     </TopBarCont>
     <HeadingCont>
       <ChooseCategory category='character!'/>
