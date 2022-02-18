@@ -96,9 +96,6 @@ export default function Home() {
     <Link href='/character'>
       <Button>Login</Button>
     </Link>
-    <Link href='/settings'>
-      <Button>settings</Button>
-    </Link>
   </Container>
   )
 }

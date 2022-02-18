@@ -18,6 +18,7 @@ const {theme, setTheme} = useTheme();
   <Container>
       <DarkMode onSwitchClick={()=>setTheme(theme==='dark'?'default':'dark')}/>
       <Link href="./">Home</Link>
+      <Link href="/character">Back</Link>
   </Container>
   )
 }
