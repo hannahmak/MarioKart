@@ -13,7 +13,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/5/58/BabyMarioSluggers.png",
+   "Color": "#FB0A40"
  },
  {
    "Character": "Baby Luigi",
@@ -29,7 +31,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/d/d7/Baby_Luigi_MSS_artwork.png",
+   "Color": "#22C300"
  },
  {
    "Character": "Baby Peach",
@@ -45,7 +49,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/2/20/Babypeachsimple.png",
+   "Color": "#FF2981"
  },
  {
    "Character": "Baby Daisy",
@@ -61,7 +67,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/6/65/Babydaisysimple.png",
+   "Color": "#FFAC0A"
  },
  {
    "Character": "Baby Rosalina",
@@ -77,7 +85,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/3/33/MKT_Artwork_BabyRosalina.png",
+   "Color": "#98FFEF"
  },
  {
    "Character": "Lemmy Koopa",
@@ -93,7 +103,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/8/84/NSMBW_Lemmy_Artwork.png",
+   "Color": "#FDDE02"
  },
  {
    "Character": "Mii Light",
@@ -109,7 +121,9 @@
    "Handling (Air)": 4.75,
    "Handling(Ground)": 4.75,
    "Traction": 4.5,
-   "Mini Turbo": 3
+   "Mini Turbo": 3,
+   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+   "Color": "#323232"
  },
  {
    "Character": "Toad",
@@ -125,7 +139,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/8/89/MPS_Toad_Artwork.png",
+   "Color": "#F43D3D"
  },
  {
    "Character": "Shy Guy",
@@ -141,7 +157,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/b/b2/MPS_Shy_Guy_Artwork.png",
+   "Color": "#FFC60B"
  },
  {
    "Character": "Koopa Troopa",
@@ -157,7 +175,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/5/5c/SuperMarioParty_KoopaTroopa.png",
+   "Color": "#3BD43E"
  },
  {
    "Character": "Lakitu",
@@ -173,7 +193,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/8/87/NSMBU_Lakitu_Artwork.png",
+   "Color": "#E6B11F"
  },
  {
    "Character": "Wendy Koopa",
@@ -189,7 +211,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/9/95/NSMBW_Wendy_Artwork.png",
+   "Color": "#FF88B3"
  },
  {
    "Character": "Larry Koopa",
@@ -205,7 +229,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/1/18/NSMBU_Larry_Koopa_Artwork.png",
+   "Color": "#00A8F9"
  },
  {
    "Character": "Toadette",
@@ -221,7 +247,9 @@
    "Handling (Air)": 4.25,
    "Handling(Ground)": 4.25,
    "Traction": 4.25,
-   "Mini Turbo": 2.75
+   "Mini Turbo": 2.75,
+   "Image": "https://mario.wiki.gallery/images/1/12/MPS_Toadette.png",
+   "Color": "#FF1D67"
  },
  {
    "Character": "Peach",
@@ -237,7 +265,9 @@
    "Handling (Air)": 3.75,
    "Handling(Ground)": 3.75,
    "Traction": 4,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/2/21/MPSS_Peach.png",
+   "Color": "#FF2981"
  },
  {
    "Character": "Daisy",
@@ -253,7 +283,9 @@
    "Handling (Air)": 3.75,
    "Handling(Ground)": 3.75,
    "Traction": 4,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/3/34/MPS_Daisy_Artwork_2.png",
+   "Color": "#FFAC0A"
  },
  {
    "Character": "Yoshi",
@@ -269,7 +301,9 @@
    "Handling (Air)": 3.75,
    "Handling(Ground)": 3.75,
    "Traction": 4,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/4/4d/Yoshi_-_Mario_Party_10.png",
+   "Color": "#8EF27E"
  },
  {
    "Character": "Mario",
@@ -285,7 +319,9 @@
    "Handling (Air)": 3.25,
    "Handling(Ground)": 3.25,
    "Traction": 3.75,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/3/3e/MPSS_Mario.png",
+   "Color": "#FB0A40"
  },
  {
    "Character": "Luigi",
@@ -301,7 +337,9 @@
    "Handling (Air)": 3.25,
    "Handling(Ground)": 3.25,
    "Traction": 3.75,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/7/72/MPSS_Luigi.png",
+   "Color": "#22C300"
  },
  {
    "Character": "Iggy Koopa",
@@ -317,7 +355,9 @@
    "Handling (Air)": 3.25,
    "Handling(Ground)": 3.25,
    "Traction": 3.75,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/c/c0/NSMBU_Iggy_Artwork.png",
+   "Color": "#A6D935"
  },
  {
    "Character": "Ludwig Koopa",
@@ -333,7 +373,9 @@
    "Handling (Air)": 3.25,
    "Handling(Ground)": 3.25,
    "Traction": 3.75,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/8/8e/LudwigNSMBU.png",
+   "Color": "#4EB4FF"
  },
  {
    "Character": "Mii Medium",
@@ -349,7 +391,9 @@
    "Handling (Air)": 3.25,
    "Handling(Ground)": 3.25,
    "Traction": 3.75,
-   "Mini Turbo": 2.5
+   "Mini Turbo": 2.5,
+   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+   "Color": "#323232"
  },
  {
    "Character": "Donkey Kong",
@@ -365,7 +409,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.5,
-   "Mini Turbo": 2.25
+   "Mini Turbo": 2.25,
+   "Image": "https://mario.wiki.gallery/images/8/84/MPS_Donkey_Kong_Artwork.png",
+   "Color": "#FACF3E"
  },
  {
    "Character": "Waluigi",
@@ -381,7 +427,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.5,
-   "Mini Turbo": 2.25
+   "Mini Turbo": 2.25,
+   "Image": "https://mario.wiki.gallery/images/2/27/SuperMarioParty_Waluigi.png",
+   "Color": "#7412FF"
  },
  {
    "Character": "Rosalina",
@@ -397,7 +445,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.5,
-   "Mini Turbo": 2.25
+   "Mini Turbo": 2.25,
+   "Image": "https://mario.wiki.gallery/images/5/56/Rosalina-MPTop100-Transparent.png",
+   "Color": "#86DBCF"
  },
  {
    "Character": "Roy Koopa",
@@ -413,7 +463,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.5,
-   "Mini Turbo": 2.25
+   "Mini Turbo": 2.25,
+   "Image": "https://mario.wiki.gallery/images/6/67/NSMBW_Roy_Artwork.png",
+   "Color": "#F8A2CE"
  },
  {
    "Character": "Metal Mario",
@@ -429,7 +481,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/9/95/MetalMarioMK7Solo.png",
+   "Color": "#BCBDC2"
  },
  {
    "Character": "Pink Gold Peach",
@@ -445,7 +499,9 @@
    "Handling (Air)": 2.75,
    "Handling(Ground)": 2.75,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/0/01/MKT_Artwork_PinkGoldPeach.png",
+   "Color": "#EBAD95"
  },
  {
    "Character": "Wario",
@@ -461,7 +517,9 @@
    "Handling (Air)": 2.25,
    "Handling(Ground)": 2.25,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/2/29/SMPWario.png",
+   "Color": "#FFC700"
  },
  {
    "Character": "Bowser",
@@ -477,7 +535,9 @@
    "Handling (Air)": 2.25,
    "Handling(Ground)": 2.25,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/7/7d/MSOGT_Bowser.png",
+   "Color": "#FFCD1C"
  },
  {
    "Character": "Morton Koopa",
@@ -493,7 +553,9 @@
    "Handling (Air)": 2.25,
    "Handling(Ground)": 2.25,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/8/8a/NSMBW_Morton_Artwork.jpg",
+   "Color": "#FFB11D"
  },
  {
    "Character": "Mii Heavy",
@@ -509,6 +571,8 @@
    "Handling (Air)": 2.25,
    "Handling(Ground)": 2.25,
    "Traction": 3.25,
-   "Mini Turbo": 1.75
+   "Mini Turbo": 1.75,
+   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+   "Color": "#323232"
  }
 ]

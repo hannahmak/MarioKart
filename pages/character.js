@@ -86,6 +86,17 @@ export default function Character() {
         <Card 
           key={i} 
           name={o.Character}
+          bgcolor={o.Color}
+          img={o.Image}
+          height={'114px'}
+          width={'148px'}
+
+          cat1={'Class'}
+          val1={o.Class}
+          cat2={'Weight'}
+          val2={o.Weight}
+          cat3={'Acceleration'}
+          val3={o.Acceleration}
         >
 
         </Card>
