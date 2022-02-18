@@ -13,6 +13,8 @@ const CardInner = styled.div`
 `
 
 const CardContainer = styled.div`
+    display: flex;
+    margin: 8px;
     background-color: transparent;
     width: 188px;
     height: 250px;
