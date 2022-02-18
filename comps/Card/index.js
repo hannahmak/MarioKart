@@ -123,7 +123,8 @@ const Button = styled.button`
     border-radius: 20px;
     border: none;
     margin-top: 10px;
-
+    background: #FDFDFD;
+    
     cursor: pointer;
     font-size: 12px;
     color: #303030;
