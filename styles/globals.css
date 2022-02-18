@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
 
-html {
+html, body {
+    margin: 0px;
     font-family: 'Lexend', sans-serif;
 }
