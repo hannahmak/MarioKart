@@ -6,7 +6,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png"
  },
  {
    "Vehicle": "Pipe Frame",
@@ -15,7 +16,8 @@
    "Weight": -0.25,
    "Handling": 0.5,
    "Traction": 0.25,
-   "Mini Turbo": 0.5
+   "MiniTurbo": 0.5,
+   "Image": "https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png"
  },
  {
    "Vehicle": "Mach 8",
@@ -24,7 +26,8 @@
    "Weight": 0.25,
    "Handling": -0.25,
    "Traction": 0.25,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png"
  },
  {
    "Vehicle": "Cat Cruiser",
@@ -33,7 +36,8 @@
    "Weight": 0,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/b/be/MKT_Icon_CatCruiser.png"
  },
  {
    "Vehicle": "Steel Driver",
@@ -42,7 +46,8 @@
    "Weight": 0.5,
    "Handling": -0.5,
    "Traction": 0,
-   "Mini Turbo": -0.5
+   "MiniTurbo": -0.5,
+   "Image": "https://mario.wiki.gallery/images/9/94/Steel_Driver.png"
  },
  {
    "Vehicle": "Circuit Special",
@@ -51,7 +56,8 @@
    "Weight": 0.25,
    "Handling": -0.5,
    "Traction": -0.5,
-   "Mini Turbo": -0.75
+   "MiniTurbo": -0.75,
+   "Image": "https://mario.wiki.gallery/images/6/6c/CircuitSpecialBodyMK8.png"
  },
  {
    "Vehicle": "Tri-Speeder",
@@ -60,7 +66,8 @@
    "Weight": 0.5,
    "Handling": -0.5,
    "Traction": 0,
-   "Mini Turbo": -0.5
+   "MiniTurbo": -0.5,
+   "Image": "https://mario.wiki.gallery/images/5/56/TrispeederBodyMK8.png"
  },
  {
    "Vehicle": "Badwagon",
@@ -69,7 +76,8 @@
    "Weight": 0.5,
    "Handling": -0.75,
    "Traction": 0.5,
-   "Mini Turbo": -1
+   "MiniTurbo": -1,
+   "Image": "https://mario.wiki.gallery/images/c/c2/BadwagonBodyMK8.png"
  },
  {
    "Vehicle": "Prancer",
@@ -78,7 +86,8 @@
    "Weight": -0.25,
    "Handling": 0,
    "Traction": -0.25,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/f/ff/PrancerBodyMK8.png"
  },
  {
    "Vehicle": "Biddybuggy",
@@ -87,7 +96,8 @@
    "Weight": -0.5,
    "Handling": 0.5,
    "Traction": 0.5,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png"
  },
  {
    "Vehicle": "Landship",
@@ -96,7 +106,8 @@
    "Weight": -0.5,
    "Handling": -0.5,
    "Traction": 0.75,
-   "Mini Turbo": 0.5
+   "MiniTurbo": 0.5,
+   "Image": "https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png"
  },
  {
    "Vehicle": "Sneeker",
@@ -105,7 +116,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": -0.75,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/4/47/SneakerBodyMK8.png"
  },
  {
    "Vehicle": "Sports Coupe",
@@ -114,7 +126,8 @@
    "Weight": 0.25,
    "Handling": -0.25,
    "Traction": 0.25,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png"
  },
  {
    "Vehicle": "Gold Standard",
@@ -123,7 +136,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": -0.75,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/f/fe/Gold_Standard.png"
  },
  {
    "Vehicle": "Mercedes GLA",
@@ -132,7 +146,8 @@
    "Weight": 0.5,
    "Handling": -0.75,
    "Traction": 0.5,
-   "Mini Turbo": -1
+   "MiniTurbo": -1,
+   "Image": "https://mario.wiki.gallery/images/c/c2/GLA-MK8.png"
  },
  {
    "Vehicle": "Mercedes Silver Arrow",
@@ -141,7 +156,8 @@
    "Weight": -0.25,
    "Handling": 0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png"
  },
  {
    "Vehicle": "Mercedes 300 SL Roadster",
@@ -150,7 +166,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png"
  },
  {
    "Vehicle": "Blue Falcon",
@@ -159,7 +176,8 @@
    "Weight": -0.5,
    "Handling": -0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png"
  },
  {
    "Vehicle": "Tanooki Kart",
@@ -168,7 +186,8 @@
    "Weight": 0.25,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 1
+   "MiniTurbo": 1,
+   "Image": "https://mario.wiki.gallery/images/e/e0/MKT_Icon_TanookiKart.png"
  },
  {
    "Vehicle": "B Dasher",
@@ -177,7 +196,8 @@
    "Weight": 0.25,
    "Handling": -0.5,
    "Traction": -0.25,
-   "Mini Turbo": -0.5
+   "MiniTurbo": -0.5,
+   "Image": "https://mario.wiki.gallery/images/1/15/ZeldaMK8Bdasher.png"
  },
  {
    "Vehicle": "Streetle",
@@ -186,7 +206,8 @@
    "Weight": -0.5,
    "Handling": -0.5,
    "Traction": -0.25,
-   "Mini Turbo": 0.75
+   "MiniTurbo": 0.75,
+   "Image": "https://mario.wiki.gallery/images/c/cf/MK8Streetle.png"
  },
  {
    "Vehicle": "P-Wing",
@@ -195,7 +216,8 @@
    "Weight": 0.25,
    "Handling": -0.5,
    "Traction": -0.25,
-   "Mini Turbo": -0.5
+   "MiniTurbo": -0.5,
+   "Image": "https://mario.wiki.gallery/images/c/cd/MK8PWing.png"
  },
  {
    "Vehicle": "Koopa Clown",
@@ -204,7 +226,8 @@
    "Weight": 0.25,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 1
+   "MiniTurbo": 1,
+   "Image": "https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png"
  },
  {
    "Vehicle": "Standard Bike",
@@ -213,7 +236,8 @@
    "Weight": -0.25,
    "Handling": 0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png"
  },
  {
    "Vehicle": "Comet",
@@ -222,7 +246,8 @@
    "Weight": 0,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png"
  },
  {
    "Vehicle": "Sport Bike",
@@ -231,7 +256,8 @@
    "Weight": -0.25,
    "Handling": 0,
    "Traction": -0.25,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/f/fe/SportBikeBodyMK8.png"
  },
  {
    "Vehicle": "The Duke",
@@ -240,7 +266,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": 0,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png"
  },
  {
    "Vehicle": "Flame Rider",
@@ -249,7 +276,8 @@
    "Weight": -0.25,
    "Handling": 0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png"
  },
  {
    "Vehicle": "Varmint",
@@ -258,7 +286,8 @@
    "Weight": -0.25,
    "Handling": 0.5,
    "Traction": 0.25,
-   "Mini Turbo": 0.5
+   "MiniTurbo": 0.5,
+   "Image": "https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png"
  },
  {
    "Vehicle": "Mr. Scooty",
@@ -267,7 +296,8 @@
    "Weight": -0.5,
    "Handling": 0.5,
    "Traction": 0.25,
-   "Mini Turbo": 0.75
+   "MiniTurbo": 0.75,
+   "Image": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png"
  },
  {
    "Vehicle": "Jet Bike",
@@ -276,7 +306,8 @@
    "Weight": -0.25,
    "Handling": 0,
    "Traction": -0.25,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/1/12/JetBikeBodyMK8.png"
  },
  {
    "Vehicle": "Yoshi Bike",
@@ -285,7 +316,8 @@
    "Weight": 0,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png"
  },
  {
    "Vehicle": "Master Cycle",
@@ -294,7 +326,8 @@
    "Weight": 0,
    "Handling": 0,
    "Traction": -0.75,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/8/8a/MK8MasterCycle.png"
  },
  {
    "Vehicle": "City Tripper",
@@ -303,7 +336,8 @@
    "Weight": -0.25,
    "Handling": 0.5,
    "Traction": 0.25,
-   "Mini Turbo": 0.5
+   "MiniTurbo": 0.5,
+   "Image": "https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png"
  },
  {
    "Vehicle": "Standard ATV",
@@ -312,7 +346,8 @@
    "Weight": 0.5,
    "Handling": -0.75,
    "Traction": 0.5,
-   "Mini Turbo": -1
+   "MiniTurbo": -1,
+   "Image": "https://mario.wiki.gallery/images/2/23/StandardATVBodyMK8.png"
  },
  {
    "Vehicle": "Wild Wiggler",
@@ -321,7 +356,8 @@
    "Weight": -0.25,
    "Handling": 0.25,
    "Traction": 0.5,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png"
  },
  {
    "Vehicle": "Teddy Buggy",
@@ -330,7 +366,8 @@
    "Weight": 0,
    "Handling": 0.25,
    "Traction": 0,
-   "Mini Turbo": 0.25
+   "MiniTurbo": 0.25,
+   "Image": "https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png"
  },
  {
    "Vehicle": "Bone Rattler",
@@ -339,7 +376,8 @@
    "Weight": 0.5,
    "Handling": -0.5,
    "Traction": 0,
-   "Mini Turbo": -0.5
+   "MiniTurbo": -0.5,
+   "Image": "https://mario.wiki.gallery/images/0/0a/MK8BoneRattler.png"
  },
  {
    "Vehicle": "Inkstriker",
@@ -348,7 +386,8 @@
    "Weight": 0.25,
    "Handling": -0.25,
    "Traction": 0.25,
-   "Mini Turbo": 0
+   "MiniTurbo": 0,
+   "Image": "https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png"
  },
  {
    "Vehicle": "Splat Buggy",
@@ -357,6 +396,7 @@
    "Weight": -0.5,
    "Handling": -0.25,
    "Traction": 0,
-   "Mini Turbo": -0.25
+   "MiniTurbo": -0.25,
+   "Image": "https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png"
  }
 ]

@@ -61,8 +61,8 @@ const ContentContainerFront = styled.div`
 `
 //front card content
 const Image = styled.img`
-    height: 114px;
-    width: 107.14px;
+    height: ${props=>props.height};
+    width: ${props=>props.width};
 `
 
 const DescContainer = styled.div`
@@ -133,11 +133,19 @@ const Card =({
     //props
     bgcolor = '#FB0A40',
     img = '/mario.png',
+    height = '114px',
+    width = '107.14px',
     title = 'Driver',
     name = 'Mario', 
 
-    cat = 'Class',
-    val = 'Medium',
+    cat1 = 'Class',
+    val1 = 'Medium',
+
+    cat2 = 'Class',
+    val2 = 'Medium',
+
+    cat3 = 'Class',
+    val3 = 'Medium',
   
     onButtonClick= ()=>{ console.log('selected')}
 
@@ -151,7 +159,7 @@ const Card =({
             <CardFront bgcolor={bgcolor}>
                 <ContentContainerFront>
                   
-                    <Image src={img} />
+                    <Image height={height} width={width}src={img}/>
               
 
                     <DescContainer>
@@ -165,16 +173,16 @@ const Card =({
                 <ContentContainerBack>
                     <StatsContainer>
                         <Stats>
-                            <StatsHeader>{cat}</StatsHeader>
-                            <StatsVal>{val}</StatsVal>
+                            <StatsHeader>{cat1}</StatsHeader>
+                            <StatsVal>{val1}</StatsVal>
                         </Stats>
                         <Stats>
-                            <StatsHeader>{cat}</StatsHeader>
-                            <StatsVal>{val}</StatsVal>
+                            <StatsHeader>{cat2}</StatsHeader>
+                            <StatsVal>{val2}</StatsVal>
                         </Stats>
                         <Stats>
-                            <StatsHeader>{cat}</StatsHeader>
-                            <StatsVal>{val}</StatsVal>
+                            <StatsHeader>{cat3}</StatsHeader>
+                            <StatsVal>{val3}</StatsVal>
                         </Stats>
 
                     </StatsContainer>
