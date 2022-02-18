@@ -22,13 +22,15 @@ width:50%;
 `
 const Setting = styled.img`
 width:35px;
+display:${props=>props.display};
 `
 const Back = styled.img`
 width:40px;
 `
 
 const TopMenu = ({
-    link="/"
+    link="javascript:history.back()",
+    display="flex",
 }) => {
   return (
     <Container>
@@ -39,7 +41,7 @@ const TopMenu = ({
         </SettingCont>
         <BackCont>
             <Link href="/settings">
-                <Setting src='/setting-icon.svg'/>
+                <Setting display={display} src='/setting-icon.svg'/>
             </Link>
         </BackCont>
     </Container>
