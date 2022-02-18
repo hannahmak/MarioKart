@@ -238,7 +238,8 @@
    "Handling": -0.5,
    "Traction": -0.25,
    "MiniTurbo": -0.5,
-   "Image": "https://mario.wiki.gallery/images/c/cd/MK8PWing.png"
+   "Image": "https://mario.wiki.gallery/images/c/cd/MK8PWing.png",
+   "Color": "#451B88"
  },
  {
    "Vehicle": "Koopa Clown",
@@ -248,7 +249,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 1,
-   "Image": "https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png"
+   "Image": "https://mario.wiki.gallery/images/7/70/MK8DX_Koopa_Clown.png",
+   "Color": "#FF9E39"
  },
  {
    "Vehicle": "Standard Bike",
@@ -258,7 +260,8 @@
    "Handling": 0.25,
    "Traction": 0.5,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/8/84/StandardBikeBodyMK8.png",
+   "Color": "#FF3735"
  },
  {
    "Vehicle": "Comet",
@@ -268,7 +271,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/0/0e/CometBodyMK8.png",
+   "Color": "#EB4932"
  },
  {
    "Vehicle": "Sport Bike",
@@ -278,7 +282,8 @@
    "Handling": 0,
    "Traction": -0.25,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/f/fe/SportBikeBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/f/fe/SportBikeBodyMK8.png",
+   "Color": "#2A3E5C"
  },
  {
    "Vehicle": "The Duke",
@@ -288,7 +293,8 @@
    "Handling": 0,
    "Traction": 0,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/8/8a/TheDukeBodyMK8.png",
+   "Color": "#9C5BD1"
  },
  {
    "Vehicle": "Flame Rider",
@@ -298,7 +304,8 @@
    "Handling": 0.25,
    "Traction": 0.5,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/3/31/FlameRiderBodyMK8.png",
+   "Color": "#37373F"
  },
  {
    "Vehicle": "Varmint",
@@ -308,7 +315,8 @@
    "Handling": 0.5,
    "Traction": 0.25,
    "MiniTurbo": 0.5,
-   "Image": "https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/d/d0/VarmintBodyMK8.png",
+   "Color": "#FFE034"
  },
  {
    "Vehicle": "Mr. Scooty",
@@ -318,7 +326,8 @@
    "Handling": 0.5,
    "Traction": 0.25,
    "MiniTurbo": 0.75,
-   "Image": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/1/18/MrScootyBodyMK8.png",
+   "Color": "#FFD337"
  },
  {
    "Vehicle": "Jet Bike",
@@ -328,7 +337,8 @@
    "Handling": 0,
    "Traction": -0.25,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/1/12/JetBikeBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/1/12/JetBikeBodyMK8.png",
+   "Color": "#FF9628"
  },
  {
    "Vehicle": "Yoshi Bike",
@@ -338,7 +348,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/6/62/YoshiBikeBodyMK8.png",
+   "Color": "#83C158"
  },
  {
    "Vehicle": "Master Cycle",
@@ -348,7 +359,8 @@
    "Handling": 0,
    "Traction": -0.75,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/8/8a/MK8MasterCycle.png"
+   "Image": "https://mario.wiki.gallery/images/8/8a/MK8MasterCycle.png",
+   "Color": "#364E6F"
  },
  {
    "Vehicle": "City Tripper",
@@ -358,7 +370,8 @@
    "Handling": 0.5,
    "Traction": 0.25,
    "MiniTurbo": 0.5,
-   "Image": "https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png"
+   "Image": "https://mario.wiki.gallery/images/b/be/MK8_Light-Green_City_Tripper.png",
+   "Color": "#43C351"
  },
  {
    "Vehicle": "Standard ATV",
@@ -368,7 +381,8 @@
    "Handling": -0.75,
    "Traction": 0.5,
    "MiniTurbo": -1,
-   "Image": "https://mario.wiki.gallery/images/2/23/StandardATVBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/2/23/StandardATVBodyMK8.png",
+   "Color": "#EC2929"
  },
  {
    "Vehicle": "Wild Wiggler",
@@ -378,7 +392,8 @@
    "Handling": 0.25,
    "Traction": 0.5,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/a/aa/WildWigglerBodyMK8.png",
+   "Color": "#BF407F"
  },
  {
    "Vehicle": "Teddy Buggy",
@@ -388,7 +403,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/f/fa/TeddyBuggyBodyMK8.png",
+   "Color": "#25B0E9"
  },
  {
    "Vehicle": "Bone Rattler",
@@ -398,7 +414,8 @@
    "Handling": -0.5,
    "Traction": 0,
    "MiniTurbo": -0.5,
-   "Image": "https://mario.wiki.gallery/images/0/0a/MK8BoneRattler.png"
+   "Image": "https://mario.wiki.gallery/images/0/0a/MK8BoneRattler.png",
+   "Color": "#AD56A3"
  },
  {
    "Vehicle": "Inkstriker",
@@ -408,7 +425,8 @@
    "Handling": -0.25,
    "Traction": 0.25,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png"
+   "Image": "https://mario.wiki.gallery/images/e/eb/MK8DX_Inkstriker.png",
+   "Color": "#AE72C3"
  },
  {
    "Vehicle": "Splat Buggy",
@@ -418,6 +436,7 @@
    "Handling": -0.25,
    "Traction": 0,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png"
+   "Image": "https://mario.wiki.gallery/images/6/63/MK8DX_Splat_Buggy.png",
+   "Color": "#E773CE"
  }
 ]
