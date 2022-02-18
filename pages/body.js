@@ -29,11 +29,22 @@ export default function Body() {
   {data.map((o,i)=>
       <Card 
         key={i} 
+
+        //front card
         title={'Kart'}
         name={o.Vehicle}
-      >
+        img={o.Image}
+        height={'94.72'}
+        width={'148px'}
 
-      </Card>
+        //back card
+        cat1={'Speed'}
+        val1={o.Speed}
+        cat2={'Acceleration'}
+        val2={o.Acceleration}
+        cat3={'Mini Turbo'}
+        val3={o.MiniTurbo}
+      />
     )}
   </Container>
   )
