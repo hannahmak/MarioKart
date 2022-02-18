@@ -17,3 +17,13 @@ export const loadingToad = {
         logo:"mushroom-cup-red.svg"
     }
 }
+
+export const text = {
+    default:{
+        textcolor:"#303030"
+    },
+    dark:{
+        textcolor:"#FDFDFD"
+    }
+
+}
