@@ -7,7 +7,8 @@
    "Handling": 0,
    "Traction": 0,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/0/05/StandardKartBodyMK8.png",
+   "Color": "#FF4D4C"
  },
  {
    "Vehicle": "Pipe Frame",
@@ -17,7 +18,8 @@
    "Handling": 0.5,
    "Traction": 0.25,
    "MiniTurbo": 0.5,
-   "Image": "https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/d/d1/PipeFrameBodyMK8.png",
+   "Color": "#F64646"
  },
  {
    "Vehicle": "Mach 8",
@@ -27,7 +29,8 @@
    "Handling": -0.25,
    "Traction": 0.25,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/d/df/Mach8BodyMK8.png",
+   "Color": "#3058CF"
  },
  {
    "Vehicle": "Cat Cruiser",
@@ -37,7 +40,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/b/be/MKT_Icon_CatCruiser.png"
+   "Image": "https://mario.wiki.gallery/images/b/be/MKT_Icon_CatCruiser.png",
+   "Color": "#FF76B8"
  },
  {
    "Vehicle": "Steel Driver",
@@ -47,7 +51,8 @@
    "Handling": -0.5,
    "Traction": 0,
    "MiniTurbo": -0.5,
-   "Image": "https://mario.wiki.gallery/images/9/94/Steel_Driver.png"
+   "Image": "https://mario.wiki.gallery/images/9/94/Steel_Driver.png",
+   "Color": "#6D98D8"
  },
  {
    "Vehicle": "Circuit Special",
@@ -57,7 +62,8 @@
    "Handling": -0.5,
    "Traction": -0.5,
    "MiniTurbo": -0.75,
-   "Image": "https://mario.wiki.gallery/images/6/6c/CircuitSpecialBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/6/6c/CircuitSpecialBodyMK8.png",
+   "Color": "#546CB0"
  },
  {
    "Vehicle": "Tri-Speeder",
@@ -67,7 +73,8 @@
    "Handling": -0.5,
    "Traction": 0,
    "MiniTurbo": -0.5,
-   "Image": "https://mario.wiki.gallery/images/5/56/TrispeederBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/5/56/TrispeederBodyMK8.png",
+   "Color": "#45815C"
  },
  {
    "Vehicle": "Badwagon",
@@ -77,7 +84,8 @@
    "Handling": -0.75,
    "Traction": 0.5,
    "MiniTurbo": -1,
-   "Image": "https://mario.wiki.gallery/images/c/c2/BadwagonBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/c/c2/BadwagonBodyMK8.png",
+   "Color": "#FF66C0"
  },
  {
    "Vehicle": "Prancer",
@@ -87,7 +95,8 @@
    "Handling": 0,
    "Traction": -0.25,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/f/ff/PrancerBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/f/ff/PrancerBodyMK8.png",
+   "Color": "#F9914B"
  },
  {
    "Vehicle": "Biddybuggy",
@@ -97,7 +106,8 @@
    "Handling": 0.5,
    "Traction": 0.5,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/4/45/BiddybuggyBodyMK8.png",
+   "Color": "#E85B5C"
  },
  {
    "Vehicle": "Landship",
@@ -107,7 +117,8 @@
    "Handling": -0.5,
    "Traction": 0.75,
    "MiniTurbo": 0.5,
-   "Image": "https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/6/6d/LandshipBodyMK8.png",
+   "Color": "#A43535"
  },
  {
    "Vehicle": "Sneeker",
@@ -117,7 +128,8 @@
    "Handling": 0,
    "Traction": -0.75,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/4/47/SneakerBodyMK8.png"
+   "Image": "https://mario.wiki.gallery/images/4/47/SneakerBodyMK8.png",
+   "Color": "#3F51B3"
  },
  {
    "Vehicle": "Sports Coupe",
@@ -127,7 +139,8 @@
    "Handling": -0.25,
    "Traction": 0.25,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png"
+   "Image": "https://mario.wiki.gallery/images/f/f8/SportsCoupeMK8.png",
+   "Color": "#FFCF23"
  },
  {
    "Vehicle": "Gold Standard",
@@ -137,7 +150,8 @@
    "Handling": 0,
    "Traction": -0.75,
    "MiniTurbo": -0.25,
-   "Image": "https://mario.wiki.gallery/images/f/fe/Gold_Standard.png"
+   "Image": "https://mario.wiki.gallery/images/f/fe/Gold_Standard.png",
+   "Color": "#E29D38"
  },
  {
    "Vehicle": "Mercedes GLA",
@@ -147,7 +161,8 @@
    "Handling": -0.75,
    "Traction": 0.5,
    "MiniTurbo": -1,
-   "Image": "https://mario.wiki.gallery/images/c/c2/GLA-MK8.png"
+   "Image": "https://mario.wiki.gallery/images/c/c2/GLA-MK8.png",
+   "Color": "#407292"
  },
  {
    "Vehicle": "Mercedes Silver Arrow",
@@ -157,7 +172,8 @@
    "Handling": 0.25,
    "Traction": 0.5,
    "MiniTurbo": 0.25,
-   "Image": "https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png"
+   "Image": "https://mario.wiki.gallery/images/2/25/W25SilverArrow-MK8.png",
+   "Color": "#313842"
  },
  {
    "Vehicle": "Mercedes 300 SL Roadster",
@@ -167,7 +183,8 @@
    "Handling": 0,
    "Traction": 0,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png"
+   "Image": "https://mario.wiki.gallery/images/f/f4/300SLRoadster_MK8.png",
+   "Color": "#BABCBA"
  },
  {
    "Vehicle": "Blue Falcon",
@@ -177,7 +194,8 @@
    "Handling": -0.25,
    "Traction": 0.5,
    "MiniTurbo": 0,
-   "Image": "https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png"
+   "Image": "https://mario.wiki.gallery/images/f/f6/MK8BlueFalcon.png",
+   "Color": "#1E9FDA"
  },
  {
    "Vehicle": "Tanooki Kart",
@@ -187,7 +205,8 @@
    "Handling": 0.25,
    "Traction": 0,
    "MiniTurbo": 1,
-   "Image": "https://mario.wiki.gallery/images/e/e0/MKT_Icon_TanookiKart.png"
+   "Image": "https://mario.wiki.gallery/images/e/e0/MKT_Icon_TanookiKart.png",
+   "Color": "#FF921C"
  },
  {
    "Vehicle": "B Dasher",
@@ -197,7 +216,8 @@
    "Handling": -0.5,
    "Traction": -0.25,
    "MiniTurbo": -0.5,
-   "Image": "https://mario.wiki.gallery/images/1/15/ZeldaMK8Bdasher.png"
+   "Image": "https://mario.wiki.gallery/images/1/15/ZeldaMK8Bdasher.png",
+   "Color": "#FF5B37"
  },
  {
    "Vehicle": "Streetle",
@@ -207,7 +227,8 @@
    "Handling": -0.5,
    "Traction": -0.25,
    "MiniTurbo": 0.75,
-   "Image": "https://mario.wiki.gallery/images/c/cf/MK8Streetle.png"
+   "Image": "https://mario.wiki.gallery/images/c/cf/MK8Streetle.png",
+   "Color": "#FF8229"
  },
  {
    "Vehicle": "P-Wing",

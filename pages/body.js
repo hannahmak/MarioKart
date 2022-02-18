@@ -29,6 +29,7 @@ export default function Body() {
   {data.map((o,i)=>
       <Card 
         key={i} 
+        bgcolor={o.Color}
 
         //front card
         title={'Kart'}
