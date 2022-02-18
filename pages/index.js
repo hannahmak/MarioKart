@@ -6,9 +6,12 @@ import { useState } from 'react'
 import axios from 'axios'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { loadingToad, themes } from '../utils/variable'
+import {useTheme} from '../utils/provider'
+import MushroomLogo from '../comps/MushroomLogo'
 
 const LoadContainer = styled.div`
-background-color:#FB0A40;
+background-color:${props=>props.backgroundcolor};
 display:flex;
 flex-direction:column;
 width:100%;
@@ -45,13 +48,14 @@ color:white;
 
 export default function Home() {
   const [load, setLoad] = useState(false)
+  const {theme} = useTheme();
 
   if(load === false) {
     setTimeout(()=>{
       setLoad(true)
     },3000)
 
-    return <LoadContainer
+    return <LoadContainer backgroundcolor={loadingToad[theme].background}
     as={motion.div}
     initial="hidden" animate="visible" variants={{
       hidden: {
@@ -68,7 +72,7 @@ export default function Home() {
       }
     }}
     >
-      <Logo src='/mushroom-cup-white.svg'/>
+      <MushroomLogo image={loadingToad[theme].logo}/>
     </LoadContainer>
   }
   return ( <Container
