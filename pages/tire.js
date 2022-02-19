@@ -101,7 +101,7 @@ export default function Tire() {
     )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar link='/glider'/>
+      <BottomBar nextlink='/glider'/>
     </BottomBarCont>
   </Container>
   )

@@ -100,7 +100,7 @@ export default function Body() {
       )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar link='/tire'/>
+      <BottomBar nextlink='/tire'/>
     </BottomBarCont>
   
   </Container>
