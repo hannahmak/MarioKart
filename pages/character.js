@@ -103,7 +103,7 @@ export default function Character() {
       )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar link='/body'/>
+      <BottomBar nextlink='/body'/>
     </BottomBarCont>
   </Container>
   )

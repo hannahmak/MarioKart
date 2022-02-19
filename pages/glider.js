@@ -101,7 +101,7 @@ export default function Glider() {
     )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar link='/'/>
+      <BottomBar nextlink='/'/>
     </BottomBarCont>
   </Container>
   )
