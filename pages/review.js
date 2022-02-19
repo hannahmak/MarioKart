@@ -14,7 +14,8 @@ flex-wrap: wrap;
 justify-content: center;
 background-color:#FB0A40;
 color:white;
-
+justify-content:center;
+align-items:center;
 `
 const TopBarCont = styled.div`
 display:flex;
