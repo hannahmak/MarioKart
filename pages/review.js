@@ -13,6 +13,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: center;
 background-color:#FB0A40;
+color:white;
 
 `
 const TopBarCont = styled.div`
@@ -37,29 +38,6 @@ justify-content: center;
 margin-bottom:100px;
 `
 
-// const HeadingCont = styled.div`
-// display:flex;
-// flex-direction:column;
-// width:100%;
-// align-items:center;
-// justify-content:center;
-
-// `
-
-// const BottomBarCont = styled.div `
-// display:flex;
-// flex-direction:column;
-// justify-content:center;
-// align-items:center;
-// width:100%;
-// position:fixed;
-// height:10%;
-// background-color:#FB0A40;
-// z-index:20;
-// bottom:0px;
-
-// `
-
 export default function ReviewSelection() {
   return ( 
      <Container>
@@ -69,8 +47,8 @@ export default function ReviewSelection() {
     <CardCont>
     </CardCont>
     <h1>Review Selections</h1>
-    <BigButton buttontext='Share'></BigButton>
     <BigButton buttontext='Save'></BigButton>
+    <BigButton buttontext='Share'></BigButton>
   </Container>
   )
 }
