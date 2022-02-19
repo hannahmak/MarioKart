@@ -89,7 +89,7 @@ export default function Character() {
           bgcolor={o.Color}
           img={o.Image}
           height={'114px'}
-          width={'148px'}
+          width={'120px'}
 
           cat1={'Class'}
           val1={o.Class}

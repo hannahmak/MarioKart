@@ -63,7 +63,13 @@ const ContentContainerFront = styled.div`
 const Image = styled.img`
     height: ${props=>props.height};
     width: ${props=>props.width};
+
 `
+const ImageCont = styled.div`
+    background-size:contain;
+    width:${props=>props.width};
+    height:${props=>props.height};
+`;
 
 const DescContainer = styled.div`
     display: flex;
@@ -159,9 +165,9 @@ const Card =({
 
             <CardFront bgcolor={bgcolor}>
                 <ContentContainerFront>
-                  
-                    <Image height={height} width={width}src={img}/>
-              
+                    <ImageCont>
+                        <Image height={height} width={width} src={img}/>
+                    </ImageCont>
 
                     <DescContainer>
                         <Title>{title}</Title>
