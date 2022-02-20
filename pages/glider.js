@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import axios from 'axios'
+import ax from 'axios'
+import { useFilter } from '../utils/provider';
 
 //component
 import Card from '../comps/Card'
@@ -58,16 +59,91 @@ bottom:0px;
 `
 
 export default function Glider() {
+  const [data, setData] = useState([])
+  const {filter, setFilter} = useFilter()
 
-  const [data, setData] = useState([]);
+  const [sbg, setSBG] = useState(false) //sort by glider
+  const [sbk, setSBK] = useState(false) //sort by kind 
+  const [sbw, setSBW] =  useState(false) //sort by weight
+  const [sbas, setSBAS] = useState(false) //sort by airspeed
+
+  const [sbr_type, setSBRType] = useState("asc")
+
+  const inputFilter = async(name)=>{
+
+    if(filter === 'Body'){
+      setSBG(true)
+      setSBK(false)
+      setSBW(false)
+      setSBAS(false)
+      console.log(filter)
+      const res = await ax.get("/api/gliders", {
+        params: {
+          txt: name,
+          sort_glider:sbg,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'Type'){
+      setSBG(false)
+      setSBK(true)
+      setSBW(false)
+      setSBAS(false)
+      console.log(filter)
+      const res = await ax.get("/api/gliders", {
+        params: {
+          txt: name,
+          sort_kind:sbk,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'Weight'){
+      setSBG(false)
+      setSBK(false)
+      setSBW(true)
+      setSBAS(false)
+      console.log(filter)
+      const res = await ax.get("/api/gliders", {
+        params: {
+          txt: name,
+          sort_weight:sbw,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'SpeedAir'){
+      setSBG(false)
+      setSBK(false)
+      setSBW(false)
+      setSBAS(true)
+      console.log(filter)
+      const res = await ax.get("/api/gliders", {
+        params: {
+          txt: name,
+          sort_airspeed:sbas,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+  }
+
   useEffect(()=>{
     const GetGliders = async()=>{
-      const resp = await axios.get("/api/gliders");
+      const resp = await ax.get("/api/gliders");
       setData(resp.data)
     }
 
-    GetGliders();
-  }, []);
+    GetGliders()
+  }, [])
 
   return ( <Container>
     <TopBarCont>
@@ -76,6 +152,21 @@ export default function Glider() {
     <HeadingCont>
       <ChooseCategory category='glider!'/>
     </HeadingCont>
+
+    <h1>Filter</h1>
+    <button onClick={()=>setFilter("Type")}>Sort By Type</button>
+    <button onClick={()=>setFilter("Weight")}>Sort By Weight</button>
+    <button onClick={()=>setFilter("SpeedAir")}>Sort By Air Speed</button>
+    <button onClick={()=>setFilter("Body")}>Sort By Name</button>
+    
+    <h1>Sort</h1>
+    <button onClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")}>{sbr_type == "asc" ? "Ascending" : "Decending"}</button>
+
+    <br />
+    <button onClick={(e)=>inputFilter(e.target.value)}>Apply</button>
+
+
+
     <CardCont>
     {data.map((o,i)=>
       <Card
@@ -91,12 +182,12 @@ export default function Glider() {
         width={'148px'}
 
         //back card
-        cat1={'Type'}
+        cat1={'Type'} 
         val1={o.Type}
         cat2={'Weight'}
         val2={o.Weight}
         cat3={'Air Speed'}
-        val3={o["Speed (Air)"]}
+        val3={o.SpeedAir}
       />
     )}
     </CardCont>

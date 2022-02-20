@@ -121,7 +121,6 @@ export default function Character() {
     } 
   }
   
-
   useEffect(()=>{
     const GetCharacter = async()=>{
       const resp = await ax.get("/api/characters")

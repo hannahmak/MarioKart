@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import axios from 'axios'
+import { useFilter } from '../utils/provider';
+import ax from 'axios'
 
 //components
 import Card from '../comps/Card'
@@ -59,16 +60,93 @@ bottom:0px;
 `
 
 export default function Tire() {
+  const [data, setData] = useState([])
+  const {filter, setFilter} = useFilter()
 
-  const [data, setData] = useState([]);
+  const [sbti, setSBTI] = useState(false) //sort by tire
+  const [sbs, setSBS] = useState(false) //sort by speed
+  const [sbh, setSBH] =  useState(false) //sort by handling
+  const [sbt, setSBT] = useState(false) //sort by traction
+
+  const [sbr_type, setSBRType] = useState("asc")
+
+  const inputFilter = async(name)=>{
+
+    if(filter === 'Body'){
+      setSBTI(true)
+      setSBS(false)
+      setSBH(false)
+      setSBT(false)
+      console.log(filter)
+      const res = await ax.get("/api/tires", {
+        params: {
+          txt: name,
+          sort_tire:sbti,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'Speed'){
+      setSBTI(false)
+      setSBS(true)
+      setSBH(false)
+      setSBT(false)
+      console.log(filter)
+      const res = await ax.get("/api/tires", {
+        params: {
+          txt: name,
+          sort_speed:sbs,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'Handling'){
+      setSBTI(false)
+      setSBS(false)
+      setSBH(true)
+      setSBT(false)
+      console.log(filter)
+      const res = await ax.get("/api/tires", {
+        params: {
+          txt: name,
+          sort_handling:sbh,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+
+    if(filter === 'Traction'){
+      setSBTI(false)
+      setSBS(false)
+      setSBH(false)
+      setSBT(true)
+      console.log(filter)
+      const res = await ax.get("/api/tires", {
+        params: {
+          txt: name,
+          sort_traction:sbt,
+          sort_type:sbr_type
+        }
+      })
+      setData(res.data)
+    } 
+  }
+
+
+
   useEffect(()=>{
     const GetBody = async()=>{
-      const resp = await axios.get("/api/tires");
+      const resp = await ax.get("/api/tires");
       setData(resp.data)
     }
 
     GetBody();
-  }, []);
+  }, [])
 
   return ( <Container>
     <TopBarCont>
@@ -77,6 +155,20 @@ export default function Tire() {
     <HeadingCont>
       <ChooseCategory category='tire!'/>
     </HeadingCont>
+
+    <h1>Filter</h1>
+    <button onClick={()=>setFilter("Body")}>Sort By Tire</button>
+    <button onClick={()=>setFilter("Speed")}>Sort By Speed</button>
+    <button onClick={()=>setFilter("Handling")}>Sort By Handling</button>
+    <button onClick={()=>setFilter("Traction")}>Sort By Traction</button>
+    
+    <h1>Sort</h1>
+    <button onClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")}>{sbr_type == "asc" ? "Ascending" : "Decending"}</button>
+
+    <br />
+    <button onClick={(e)=>inputFilter(e.target.value)}>Apply</button>
+
+    
     <CardCont>
     {data.map((o,i)=>
     <Card 
