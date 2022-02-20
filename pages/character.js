@@ -9,6 +9,8 @@ import Card from '../comps/Card'
 import TopMenu from '../comps/TopMenu'
 import ChooseCategory from '../comps/ChooseCategory'
 import BottomBar from '../comps/BottomBar'
+import FilterButton from '../comps/FilterButton'
+import SortButton from '../comps/SortButton';
 
 const Container = styled.div`
 display: flex;
@@ -138,12 +140,25 @@ export default function Character() {
     <HeadingCont>
       <ChooseCategory category='character!'/>
     </HeadingCont>
-    <h1>Filter</h1>
-    <button onClick={()=>setFilter("Weight")}>Sort By Weight</button>
-    <button onClick={()=>setFilter("Character")}>Sort By Name</button>
-    <button onClick={()=>setFilter("Acceleration")}>Sort By Acceleration</button>
+    <h1>Filter By</h1>
+
+    {/* 
+    Old Button Design:
+    <button style={{
+      backgroundColor:sbw?"pink":"white"
+    }} // Only works once apply is clicked
     
-    <h1>Sort</h1>
+    onClick={()=>setFilter("Weight")}>Sort By Weight</button>
+    <button onClick={()=>setFilter("Character")}>Sort By Name</button>
+    <button onClick={()=>setFilter("Acceleration")}>Sort By Acceleration</button> */}
+
+    <FilterButton text="Weight" onClick={()=>setFilter("Weight")}></FilterButton> 
+    <FilterButton text="Name" onClick={()=>setFilter("Character")}></FilterButton> {/* Name filter doesn't work when Comp is used in lpace of normal html button */}
+    <FilterButton text="Acceleration" onClick={()=>setFilter("Acceleration")}></FilterButton>
+    
+    <h1>Sort By</h1>
+    <SortButton text="Ascending"></SortButton> {/* Sort Button Comp without functionality*/}
+
     <button onClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")}>{sbr_type == "asc" ? "Ascending" : "Decending"}</button>
 
     <br></br>
