@@ -1,23 +1,5 @@
 [
  {
-   "Character": "Baby Mario",
-   "Class": "Light",
-   "Speed": 2.25,
-   "Speed (Water)": 2.25,
-   "Speed (Air)": 2.25,
-   "Speed (Ground)": 2.25,
-   "Acceleration": 3.25,
-   "Weight": 2.25,
-   "Handling": 4.75,
-   "Handling (Water)": 4.75,
-   "Handling (Air)": 4.75,
-   "Handling(Ground)": 4.75,
-   "Traction": 4.5,
-   "Mini Turbo": 3,
-   "Image": "https://mario.wiki.gallery/images/5/58/BabyMarioSluggers.png",
-   "Color": "#FB0A40"
- },
- {
    "Character": "Baby Luigi",
    "Class": "Light",
    "Speed": 2.25,
@@ -35,6 +17,24 @@
    "Image": "https://mario.wiki.gallery/images/d/d7/Baby_Luigi_MSS_artwork.png",
    "Color": "#22C300"
  },
+ {
+  "Character": "Baby Mario",
+  "Class": "Light",
+  "Speed": 2.25,
+  "Speed (Water)": 2.25,
+  "Speed (Air)": 2.25,
+  "Speed (Ground)": 2.25,
+  "Acceleration": 3.25,
+  "Weight": 2.25,
+  "Handling": 4.75,
+  "Handling (Water)": 4.75,
+  "Handling (Air)": 4.75,
+  "Handling(Ground)": 4.75,
+  "Traction": 4.5,
+  "Mini Turbo": 3,
+  "Image": "https://mario.wiki.gallery/images/5/58/BabyMarioSluggers.png",
+  "Color": "#FB0A40"
+},
  {
    "Character": "Baby Peach",
    "Class": "Light",

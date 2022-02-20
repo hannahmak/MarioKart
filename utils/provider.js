@@ -5,16 +5,18 @@ import { themes } from './variable';
 const initialStates = {
    theme:"default",
    setTheme:()=>{},
+   filter:"Weight",
+   setFilter:()=>{}
 }
 
 export const MyContext = createContext(initialStates);
 
 export default function AppProvider({children}){
-    //children all the pages/components insider this provider
-    const [theme, setTheme] = useState(initialStates.theme);
-
-    //put in the variables you want to share
-    return <MyContext.Provider value={{theme, setTheme}}>
+    
+    const [theme, setTheme] = useState(initialStates.theme)
+    const [filter, setFilter] = useState(initialStates.filter)
+  
+    return <MyContext.Provider value={{theme, setTheme, filter, setFilter}}>
         <style jsx global>
             {`
                 body {
@@ -26,8 +28,13 @@ export default function AppProvider({children}){
     </MyContext.Provider>
 }
 
-//use the Context to create Hooks like useTheme
+
 export function useTheme(){
     const {theme, setTheme} = useContext(MyContext);
     return {theme, setTheme};
+}
+
+export function useFilter(){
+    const {filter, setFilter} = useContext(MyContext);
+    return {filter, setFilter}
 }
