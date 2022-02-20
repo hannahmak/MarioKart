@@ -5,17 +5,18 @@ export function filtering(
         Character: null, //character
         Weight: null, 
         Acceleration: null, //kart
-        Handling: null, 
         Speed: null, //kart
         Body: null, //glider
         Type: null, //glider
         SpeedAir: null, //glider
         MiniTurbo: null, //kart
+        Handling: null, 
+        Traction: null, 
     }
 ){
-    const {Character, Weight, Acceleration, Handling, Speed, Body, Type, SpeedAir, MiniTurbo} = config
+    const {Character, Weight, Acceleration, Speed, Body, Type, SpeedAir, MiniTurbo, Handling, Traction} = config
 
-    if(Character || Weight || Acceleration || Handling || Speed || Body || Type || SpeedAir || MiniTurbo){
+    if(Character || Weight || Acceleration || Handling || Speed || Body || Type || SpeedAir || MiniTurbo || Handling || Traction){
         const filtered_arr = arr.filter((o)=>{
             var cond = true
 
@@ -38,13 +39,16 @@ export function filtering(
                 cond = cond && Number(o.Handling) >= Number(Handling)
             }
             if(Speed){
-                cond = cond && Number(o.SpeedAir) >= Number(Speed)
+                cond = cond && Number(o.Speed) >= Number(Speed)
             }
             if(SpeedAir){
                 cond = cond && Number(o.SpeedAir) >= Number(SpeedAir)
             }
             if(MiniTurbo){
                 cond = cond && Number(o.MiniTurbo) >= Number(MiniTurbo)
+            }
+            if(Traction){
+                cond = cond && Number(o.Traction) >= Number(Traction)
             }
 
             return cond
