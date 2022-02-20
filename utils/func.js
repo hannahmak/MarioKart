@@ -1,22 +1,21 @@
-import { SP } from "next/dist/shared/lib/utils"
-
 export function filtering(
     arr = [],
 
     config = {
-        Character: null, 
+        Character: null, //character
         Weight: null, 
-        Acceleration: null, 
+        Acceleration: null, //kart
         Handling: null, 
-        Speed: null, 
-        Body: null, 
-        Type: null, 
-        SpeedAir: null,
+        Speed: null, //kart
+        Body: null, //glider
+        Type: null, //glider
+        SpeedAir: null, //glider
+        MiniTurbo: null, //kart
     }
 ){
-    const {Character, Weight, Acceleration, Handling, Speed, Body, Type, SpeedAir} = config
+    const {Character, Weight, Acceleration, Handling, Speed, Body, Type, SpeedAir, MiniTurbo} = config
 
-    if(Character || Weight || Acceleration || Handling || Speed || Body || Type || SpeedAir){
+    if(Character || Weight || Acceleration || Handling || Speed || Body || Type || SpeedAir || MiniTurbo){
         const filtered_arr = arr.filter((o)=>{
             var cond = true
 
@@ -43,6 +42,9 @@ export function filtering(
             }
             if(SpeedAir){
                 cond = cond && Number(o.SpeedAir) >= Number(SpeedAir)
+            }
+            if(MiniTurbo){
+                cond = cond && Number(o.MiniTurbo) >= Number(MiniTurbo)
             }
 
             return cond
