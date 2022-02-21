@@ -10,53 +10,67 @@ import Card from '../comps/Card'
 import TopMenu from '../comps/TopMenu'
 import ChooseCategory from '../comps/ChooseCategory'
 import BottomBar from '../comps/BottomBar'
+import ButtonFilter from '../comps/ButtonFilter'
 
 const Container = styled.div`
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  justify-content: center;
 `
+
 const TopBarCont = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-width:100%;
-position:fixed;
-height:10%;
-background-color:#FB0A40;
-z-index:20;
-top:0px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  position:fixed;
+  height:10%;
+  background-color:#FB0A40;
+  z-index:20;
+  top:0px;
 `
 
 const CardCont = styled.div`
-height:70%;
-width:100%;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-bottom:100px;
+  height:70%;
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom:100px;
 `
 
 const HeadingCont = styled.div`
-display:flex;
-flex-direction:column;
-width:100%;
-align-items:center;
-justify-content:center;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  align-items:center;
+  justify-content:center;
 `
 
 const BottomBarCont = styled.div `
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-width:100%;
-position:fixed;
-height:10%;
-background-color:#FB0A40;
-z-index:20;
-bottom:0px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  position:fixed;
+  height:10%;
+  background-color:#FB0A40;
+  z-index:20;
+  bottom:0px;
+`
+
+const FilterContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+`
+
+const FilterHeading =  styled.h2`
+  font-weight: 500;
+  font-size: 18px;
 `
 
 export default function Glider() {
@@ -173,19 +187,21 @@ export default function Glider() {
       <ChooseCategory category='glider!'/>
     </HeadingCont>
 
-    <h1>Filter</h1>
-    <button onClick={()=>setFilter("Type")}>Sort By Type</button>
-    <button onClick={()=>setFilter("Weight")}>Sort By Weight</button>
-    <button onClick={()=>setFilter("SpeedAir")}>Sort By Air Speed</button>
-    <button onClick={()=>setFilter("Body")}>Sort By Name</button>
-    
-    <h1>Sort</h1>
-    <button onClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")}>{sbr_type == "asc" ? "Ascending" : "Decending"}</button>
-
-    <br />
-    <button onClick={(e)=>inputFilter(e.target.value)}>Apply</button>
-
-
+    <FilterHeading>Filter By</FilterHeading>
+    <FilterContainer>
+      <ButtonFilter text="Type" onFilterClick={()=>setFilter("Type")}/>
+      <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
+      <ButtonFilter text="Speed Air" onFilterClick={()=>setFilter("SpeedAir")}/>
+      <ButtonFilter text="Body" onFilterClick={()=>setFilter("Body")}/>
+    </FilterContainer>
+    <FilterHeading>Sort By</FilterHeading>
+    <FilterContainer>
+      <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
+    </FilterContainer>
+    <br></br>
+    <FilterContainer>
+      <ButtonFilter onFilterClick={(e)=>inputFilter(e.target.value)} text={"Apply"} />
+    </FilterContainer>
 
     <CardCont>
     {data.map((o,i)=>
