@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import ax from 'axios'
 import { useFilter } from '../utils/provider';
+import { useFavG } from '../utils/provider';
 
 //component
 import Card from '../comps/Card'
@@ -61,6 +62,7 @@ bottom:0px;
 export default function Glider() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
+  const {favG, setFavG} = useFavG();
 
   const [sbg, setSBG] = useState(false) //sort by glider
   const [sbk, setSBK] = useState(false) //sort by kind 
@@ -145,6 +147,24 @@ export default function Glider() {
     GetGliders()
   }, [])
 
+  const StoreFav = (checked, obj) => {
+    //store the favourites to be used on the next page
+    console.log(checked, obj)
+    if(checked){
+      const G_obj = {
+        ...favG 
+      };
+      G_obj[obj.Body] = obj;
+      setFavG(G_obj);
+    } else {
+      const G_obj = {
+        ...favG
+      }
+      delete G_obj[obj.Body]
+      setFavG(G_obj)
+    }
+  }
+
   return ( <Container>
     <TopBarCont>
       <TopMenu/>
@@ -169,6 +189,7 @@ export default function Glider() {
 
     <CardCont>
     {data.map((o,i)=>
+    <div>
       <Card
         key={i}
         bgcolor={o.Color}
@@ -189,10 +210,18 @@ export default function Glider() {
         cat3={'Air Speed'}
         val3={o.SpeedAir}
       />
+      <input type="checkbox"
+        checked={
+          favG[o.Body] !== undefined && favG[o.Body] !== null
+          //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
+        }
+        onChange={(e)=>StoreFav(e.target.checked, o)}
+        />
+    </div>
     )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar nextlink='/'/>
+      <BottomBar nextlink='/favourites'/>
     </BottomBarCont>
   </Container>
   )
