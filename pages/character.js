@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import ax from 'axios'
 import { useFilter } from '../utils/provider';
+import { useFavC } from '../utils/provider';
 
 //components
 import Card from '../comps/Card'
@@ -66,6 +67,7 @@ bottom:0px;
 export default function Character() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
+  const {favC, setFavC} = useFavC();
 
   const [sbc, setSBC] = useState(false) //characters
   const [sbw, setSBW] = useState(false) //weight
@@ -133,6 +135,25 @@ export default function Character() {
 
   }, [])
 
+
+  const StoreFav = (checked, obj) => {
+    //store the favourites to be used on the next page
+    console.log(checked, obj)
+    if(checked){
+      const C_obj = {
+        ...favC 
+      };
+      C_obj[obj.Character] = obj;
+      setFavC(C_obj);
+    } else {
+      const C_obj = {
+        ...favC
+      }
+      delete C_obj[obj.Character]
+      setFavC(C_obj)
+    }
+  }
+
   return ( <Container>
     <TopBarCont>
       <TopMenu link='./'/>
@@ -165,8 +186,8 @@ export default function Character() {
     <button onClick={(e)=>inputFilter(e.target.value)}>Apply</button>
     <CardCont>
       {data.map((o,i)=>
-        <Card 
-          key={i}
+        <div>
+        <Card
           
           //card stylying
           name={o.Character}
@@ -186,6 +207,14 @@ export default function Character() {
           val3={null}
         >
         </Card>
+        <input type="checkbox"
+        checked={
+          favC[o.Character] !== undefined && favC[o.Character] !== null
+          //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
+        }
+        onChange={(e)=>StoreFav(e.target.checked, o)}
+        />
+        </div>
       )}
     </CardCont>
     <BottomBarCont>

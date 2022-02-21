@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useFilter } from '../utils/provider';
+import { useFavW } from '../utils/provider';
 import ax from 'axios'
 
 //components
@@ -62,6 +63,7 @@ bottom:0px;
 export default function Tire() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
+  const {favW, setFavW} = useFavW();
 
   const [sbti, setSBTI] = useState(false) //sort by tire
   const [sbs, setSBS] = useState(false) //sort by speed
@@ -148,6 +150,24 @@ export default function Tire() {
     GetBody();
   }, [])
 
+  const StoreFav = (checked, obj) => {
+    //store the favourites to be used on the next page
+    console.log(checked, obj)
+    if(checked){
+      const W_obj = {
+        ...favW 
+      };
+      W_obj[obj.Body] = obj;
+      setFavW(W_obj);
+    } else {
+      const W_obj = {
+        ...favW
+      }
+      delete W_obj[obj.Body]
+      setFavW(W_obj)
+    }
+  }
+
   return ( <Container>
     <TopBarCont>
       <TopMenu/>
@@ -171,6 +191,7 @@ export default function Tire() {
     
     <CardCont>
     {data.map((o,i)=>
+    <div>
     <Card 
       key={i}
       bgcolor={o.Color}
@@ -190,6 +211,14 @@ export default function Tire() {
       cat3={'Traction'}
       val3={o.Traction}
     />
+    <input type="checkbox"
+        checked={
+          favW[o.Body] !== undefined && favW[o.Body] !== null
+          //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
+        }
+        onChange={(e)=>StoreFav(e.target.checked, o)}
+        />
+    </div>
     )}
     </CardCont>
     <BottomBarCont>

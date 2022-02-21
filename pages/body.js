@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useFilter } from '../utils/provider';
+import { useFavV } from '../utils/provider';
 import ax from 'axios'
 
 //components
@@ -60,6 +61,7 @@ bottom:0px;
 export default function Body() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
+  const {favV, setFavV} = useFavV();
 
   const [sbv, setSBV] = useState(false) //sort by vehicle
   const [sbs, setSBS] = useState(false) //sort by speed
@@ -143,6 +145,24 @@ export default function Body() {
     GetBody()
   }, [])
 
+  const StoreFav = (checked, obj) => {
+    //store the favourites to be used on the next page
+    console.log(checked, obj)
+    if(checked){
+      const V_obj = {
+        ...favV 
+      };
+      V_obj[obj.Vehicle] = obj;
+      setFavV(V_obj);
+    } else {
+      const V_obj = {
+        ...favV
+      }
+      delete V_obj[obj.Vehicle]
+      setFavV(V_obj)
+    }
+  }
+
   return ( <Container>
     <TopBarCont>
       <TopMenu/>
@@ -164,6 +184,7 @@ export default function Body() {
 
     <CardCont>
       {data.map((o,i)=>
+      <div>
         <Card 
           key={i} 
           bgcolor={o.Color}
@@ -183,6 +204,14 @@ export default function Body() {
           cat3={'Mini Turbo'}
           val3={o.MiniTurbo}
         />
+        <input type="checkbox"
+        checked={
+          favV[o.Vehicle] !== undefined && favV[o.Vehicle] !== null
+          //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
+        }
+        onChange={(e)=>StoreFav(e.target.checked, o)}
+        />
+        </div>
       )}
     </CardCont>
     <BottomBarCont>

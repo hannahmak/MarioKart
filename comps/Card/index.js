@@ -123,17 +123,8 @@ const StatsVal = styled.div`
     font-size: 12px;
 `
 
-const Button = styled.button`
-    width: 148px;
-    height: 20px;
-    border-radius: 20px;
-    border: none;
-    margin-top: 10px;
-    background: #FDFDFD;
-    
-    cursor: pointer;
-    font-size: 12px;
-    color: #303030;
+const Button = styled.input`
+
 `
 
 const Card =({
@@ -198,7 +189,7 @@ const Card =({
                         <Name>{name}</Name>
                     </DescContainer>
             
-                        <Button  onClick={()=>{onButtonClick()}}>Select</Button>
+                        <Button type="checkbox" onChange={()=>{onButtonClick()}}></Button>
                   
                 </ContentContainerBack>
           
@@ -210,3 +201,13 @@ const Card =({
 }
 
 export default Card
+
+    // width: 148px;
+    // height: 20px;
+    // border-radius: 20px;
+    // border: none;
+    // margin-top: 10px;
+    // background: #FDFDFD;
+    // cursor: pointer;
+    // font-size: 12px;
+    // color: #303030;
