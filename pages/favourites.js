@@ -5,7 +5,73 @@ import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavC, useFavV, useFavW, useFavG } from '../utils/provider';
 
+
+//components
 import Card from '../comps/Card'
+import TopMenu from '../comps/TopMenu'
+import ChooseCategory from '../comps/ChooseCategory'
+import BottomBar from '../comps/BottomBar'
+import FilterButton from '../comps/FilterButton'
+import SortButton from '../comps/SortButton';
+
+const Container = styled.div`
+display: flex;
+flex-wrap: wrap;
+flex-direction:column;
+justify-content: center;
+`
+
+const TopBarCont = styled.div`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+position:fixed;
+height:10%;
+background-color:#FB0A40;
+z-index:20;
+top:0px;
+`
+
+const CardCont = styled.div`
+height:70%;
+width:100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom:100px;
+`
+
+const HeadingCont = styled.div`
+display:flex;
+flex-direction:column;
+width:100%;
+align-items:center;
+justify-content:center;
+`
+
+const BottomBarCont = styled.div `
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+position:fixed;
+height:10%;
+background-color:#FB0A40;
+z-index:20;
+bottom:0px;
+`
+const Header = styled.h2`
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+width:100%;
+margin-top:100px;
+`
+
 
 
 export default function Fav() {
@@ -16,9 +82,14 @@ export default function Fav() {
 
 
   return (
-    <div>
-      Favourites
-      
+    <Container>
+    <TopBarCont>
+      <TopMenu link='./'/>
+    </TopBarCont>
+    <HeadingCont>
+      <Header>Favourites</Header>
+    </HeadingCont>
+      <CardCont>
       {Object.values(favC).map((o,i)=>
       <Card
           
@@ -109,6 +180,11 @@ export default function Fav() {
     />
     
       )}
-    </div>
+    </CardCont>  
+  
+     <BottomBarCont>
+      <BottomBar nextlink='/'/>
+    </BottomBarCont>
+    </Container>
   )
 }
