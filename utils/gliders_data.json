@@ -1,6 +1,5 @@
 [
  {
-   "key": 1,
    "Body": "Super",
    "Type": "Speed",
    "Speed": 0,
@@ -19,7 +18,6 @@
    "Color": "#BCC3BD"
  },
  {
-  "key": 2,
    "Body": "Waddle Wing",
    "Type": "Speed",
    "Speed": 0,
@@ -38,7 +36,6 @@
    "Color": "#1E1E23"
  },
  {
-  "key": 3,
    "Body": "Plane",
    "Type": "Speed",
    "Speed": 0,
@@ -57,7 +54,6 @@
    "Color": "#1E1E23"
  },
  {
-  "key": 4,
    "Body": "Wario Wing",
    "Type": "Speed",
    "Speed": 0,
@@ -76,7 +72,6 @@
    "Color": "#FF83B1"
  },
  {
-  "key": 5,
    "Body": "Gold",
    "Type": "Speed",
    "Speed": 0,
@@ -95,7 +90,6 @@
    "Color": "#479646"
  },
  {
-  "key": 6,
    "Body": "Flower",
    "Type": "Acceleration",
    "Speed": 0,
@@ -114,7 +108,6 @@
    "Color": "#584140"
  },
  {
-  "key": 7,
    "Body": "Peach Parasol",
    "Type": "Acceleration",
    "Speed": 0,
@@ -133,7 +126,6 @@
    "Color": "#DD4B9C"
  },
  {
-  "key": 8,
    "Body": "MKTV Parafoil",
    "Type": "Acceleration",
    "Speed": 0,
@@ -152,7 +144,6 @@
    "Color": "#A6D935"
  },
  {
-  "key": 9,
    "Body": "Bowser Kite",
    "Type": "Acceleration",
    "Speed": 0,
@@ -171,7 +162,6 @@
    "Color": "#DDA64C"
  },
  {
-  "key": 10,
    "Body": "Cloud",
    "Type": "Acceleration",
    "Speed": 0,

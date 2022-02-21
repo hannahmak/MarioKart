@@ -204,10 +204,11 @@ export default function Glider() {
     </FilterContainer>
 
     <CardCont>
+    
     {data.map((o,i)=>
-    <div>
+    <div  key={i}>
       <Card
-        key={i}
+       
         bgcolor={o.Color}
 
 
