@@ -204,9 +204,8 @@ export default function Body() {
 
     <CardCont>
       {data.map((o,i)=>
-      <div>
+      <div key={i}>
         <Card 
-          key={i} 
           bgcolor={o.Color}
 
           //front card

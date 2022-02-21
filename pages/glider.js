@@ -208,9 +208,7 @@ export default function Glider() {
     {data.map((o,i)=>
     <div  key={i}>
       <Card
-       
         bgcolor={o.Color}
-
 
         //front card
         title='Glider'

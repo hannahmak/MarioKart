@@ -192,9 +192,8 @@ export default function Character() {
 
     <CardCont>
       {data.map((o,i)=>
-        <div>
+        <div key={i}>
         <Card
-          
           //card stylying
           name={o.Character}
           bgcolor={o.Color}
