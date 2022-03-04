@@ -4,6 +4,7 @@ import { useState } from 'react'
 import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavC } from '../utils/provider';
+import { useTheme } from '../utils/provider';
 
 //components
 import Card from '../comps/Card'
@@ -13,6 +14,7 @@ import BottomBar from '../comps/BottomBar'
 import FilterButton from '../comps/FilterButton'
 import SortButton from '../comps/SortButton'
 import ButtonFilter from '../comps/ButtonFilter';
+import { text } from '../utils/variable';
 
 const Container = styled.div`
   display: flex;
@@ -73,6 +75,7 @@ const FilterContainer = styled.div`
 const FilterHeading =  styled.h2`
   font-weight: 500;
   font-size: 18px;
+  color:${props=>props.filterheadingcolor};
 `
 
 
@@ -166,6 +169,7 @@ export default function Character() {
     }
   }
 
+  const {theme, setTheme} = useTheme();
   return ( <Container>
     <TopBarCont>
       <TopMenu link='./'/>
@@ -174,13 +178,13 @@ export default function Character() {
       <ChooseCategory category='character!'/>
     </HeadingCont>
 
-    <FilterHeading>Filter By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
     <FilterContainer>
       <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
       <ButtonFilter text="Name" onFilterClick={()=>setFilter("Character")}/>
       <ButtonFilter text="Acceleration" onFilterClick={()=>setFilter("Acceleration")}/>
     </FilterContainer>
-    <FilterHeading>Sort By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
     <FilterContainer>
       <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
     </FilterContainer>

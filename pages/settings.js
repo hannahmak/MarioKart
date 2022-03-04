@@ -73,6 +73,10 @@ flex-direction:column;
 align-items:flex-end;
 `
 
+const SettingHeader = styled.h1 `
+color:${props=>props.settingheadcolor};
+`
+
 export default function Tire() {
   const {theme, setTheme} = useTheme();
 
@@ -82,7 +86,7 @@ export default function Tire() {
       <TopMenu display='none'/>
     </TopBarCont>
     <UserInfoCont>
-      <h1>profile info goes here</h1>
+      <SettingHeader settingheadcolor={text[theme].textcolor}>profile info goes here</SettingHeader>
     </UserInfoCont>
     <HeadingCont>
       <Preference headcolor={text[theme].textcolor}>Preferences</Preference>

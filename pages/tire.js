@@ -3,7 +3,9 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useFilter } from '../utils/provider';
 import { useFavW } from '../utils/provider';
-import ax from 'axios'
+import ax from 'axios';
+import { useTheme } from '../utils/provider';
+import { text } from '../utils/variable';
 
 //components
 import Card from '../comps/Card'
@@ -71,6 +73,7 @@ const FilterContainer = styled.div`
 const FilterHeading =  styled.h2`
   font-weight: 500;
   font-size: 18px;
+  color:${props=>props.filterheadingcolor};
 `
 
 export default function Tire() {
@@ -181,6 +184,8 @@ export default function Tire() {
     }
   }
 
+  const {theme, setTheme} = useTheme();
+
   return ( <Container>
     <TopBarCont>
       <TopMenu/>
@@ -190,14 +195,14 @@ export default function Tire() {
     </HeadingCont>
 
 
-    <FilterHeading>Filter By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
     <FilterContainer>
       <ButtonFilter text="Name" onFilterClick={()=>setFilter("Body")}/>
       <ButtonFilter text="Speed" onFilterClick={()=>setFilter("Speed")}/>
       <ButtonFilter text="Handling" onFilterClick={()=>setFilter("Handling")}/>
       <ButtonFilter text="Traction" onFilterClick={()=>setFilter("Traction")}/>
     </FilterContainer>
-    <FilterHeading>Sort By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
     <FilterContainer>
       <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
     </FilterContainer>

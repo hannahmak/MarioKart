@@ -4,6 +4,8 @@ import { useState } from 'react'
 import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavG } from '../utils/provider';
+import { text } from '../utils/variable';
+import { useTheme } from '../utils/provider';
 
 //component
 import Card from '../comps/Card'
@@ -71,6 +73,7 @@ const FilterContainer = styled.div`
 const FilterHeading =  styled.h2`
   font-weight: 500;
   font-size: 18px;
+  color:${props=>props.filterheadingcolor};
 `
 
 export default function Glider() {
@@ -179,6 +182,8 @@ export default function Glider() {
     }
   }
 
+  const {theme, setTheme} = useTheme();
+
   return ( <Container>
     <TopBarCont>
       <TopMenu/>
@@ -187,14 +192,14 @@ export default function Glider() {
       <ChooseCategory category='glider!'/>
     </HeadingCont>
 
-    <FilterHeading>Filter By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
     <FilterContainer>
       <ButtonFilter text="Type" onFilterClick={()=>setFilter("Type")}/>
       <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
       <ButtonFilter text="Speed Air" onFilterClick={()=>setFilter("SpeedAir")}/>
       <ButtonFilter text="Body" onFilterClick={()=>setFilter("Body")}/>
     </FilterContainer>
-    <FilterHeading>Sort By</FilterHeading>
+    <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
     <FilterContainer>
       <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
     </FilterContainer>

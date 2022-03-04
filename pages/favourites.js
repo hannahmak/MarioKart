@@ -4,6 +4,7 @@ import { useState } from 'react'
 import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavC, useFavV, useFavW, useFavG } from '../utils/provider';
+import { useTheme } from '../utils/provider';
 
 
 //components
@@ -13,6 +14,7 @@ import ChooseCategory from '../comps/ChooseCategory'
 import BottomBar from '../comps/BottomBar'
 import FilterButton from '../comps/FilterButton'
 import SortButton from '../comps/SortButton';
+import { text } from '../utils/variable';
 
 const Container = styled.div`
 display: flex;
@@ -70,6 +72,7 @@ justify-content:center;
 align-items:center;
 width:100%;
 margin-top:100px;
+color:${props=>props.headcolor};
 `
 
 
@@ -79,6 +82,7 @@ export default function Fav() {
   const {favV, setFavV} = useFavV();
   const {favW, setFavW} = useFavW();
   const {favG, setFavG} = useFavG();
+  const {theme} = useTheme();
 
 
   return (
@@ -87,7 +91,7 @@ export default function Fav() {
       <TopMenu link='./'/>
     </TopBarCont>
     <HeadingCont>
-      <Header>Favourites</Header>
+      <Header headcolor={text[theme].textcolor}>Favourites</Header>
     </HeadingCont>
       <CardCont>
       {Object.values(favC).map((o,i)=>
