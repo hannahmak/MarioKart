@@ -88,7 +88,7 @@ export default function Fav() {
   return (
     <Container>
     <TopBarCont>
-      <TopMenu link='./'/>
+      <TopMenu/>
     </TopBarCont>
     <HeadingCont>
       <Header headcolor={text[theme].textcolor}>Favourites</Header>
