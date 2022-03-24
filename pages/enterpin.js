@@ -11,6 +11,7 @@ import Link from 'next/link';
 import TopMenu from '../comps/TopMenu'
 import ServerButton from '../comps/ServerButton';
 import ChooseCategory from '../comps/ChooseCategory'
+import EnterPins from '../comps/EnterPinCont';
 
 
 
@@ -43,6 +44,8 @@ export default function EnterPin() {
  <TopBarCont>
       <TopMenu link='./'/>
     </TopBarCont>
+
+    <EnterPins></EnterPins>
 
 
   </Container>
