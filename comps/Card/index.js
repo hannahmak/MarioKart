@@ -127,7 +127,7 @@ const Button = styled.input`
 
 `
 
-const Card =({
+const CardDrag =({
     //props
     bgcolor = '#FB0A40',
     img = '/mario.png',
@@ -200,7 +200,7 @@ const Card =({
    
 }
 
-export default Card
+export default CardDrag
 
     // width: 148px;
     // height: 20px;
