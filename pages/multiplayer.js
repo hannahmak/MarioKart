@@ -71,10 +71,13 @@ margin-top:30px;
 
 
 export default function Multiplayer() {
-    
+    const [show, setShow] = useState(false);
+    function displayPin(){
+      setShow(true)
+    }
   return ( <Container>
  <TopBarCont>
-      <TopMenu link='./'/>
+      <TopMenu link='/pickplayers'/>
     </TopBarCont>
 {/* DELETE THESE AFTER DONE */}
 <br></br>
@@ -88,12 +91,12 @@ export default function Multiplayer() {
         <ServerButton text="Join Server"></ServerButton>
     </div>
 </Link>
-
-<Link href="/enterpin">
-    <div>
+    <div onClick={displayPin}>
         <ServerButton text="Generate Pin" bgcolor="#FB0A40" color="white"></ServerButton>
     </div>
-</Link>
+    <div style={{display: show?"flex":"none", width:'100%', justifyContent:"center", alignItems:'center'}}>
+      <p style={{background:'#FB0A40', color:'white', padding:'20px', borderRadius:'20px'}}>http://3d0e-2604-3d08-4a85-d700-9cac-5070-b3ab-1046.ngrok.io</p>
+    </div>
 
 <ContImage>
 
