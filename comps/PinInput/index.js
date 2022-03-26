@@ -11,6 +11,7 @@ background: rgba(196, 196, 196, 0.22);
 border-radius: 17.0599px;
 border:none;
 font-family:Lexend;
+padding-left: 10px;
 `;
 
 const PinInput = ({
