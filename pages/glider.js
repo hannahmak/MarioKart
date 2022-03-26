@@ -64,6 +64,13 @@ const BottomBarCont = styled.div `
   bottom:0px;
 `
 
+const FilterType = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding-left: 20px;
+`
+
 const FilterContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -192,14 +199,21 @@ export default function Glider() {
       <ChooseCategory category='glider!'/>
     </HeadingCont>
 
-    <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
+    </FilterType>
+
     <FilterContainer>
       <ButtonFilter text="Type" onFilterClick={()=>setFilter("Type")}/>
       <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
       <ButtonFilter text="Speed Air" onFilterClick={()=>setFilter("SpeedAir")}/>
       <ButtonFilter text="Body" onFilterClick={()=>setFilter("Body")}/>
     </FilterContainer>
-    <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
+
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
+    </FilterType>
+
     <FilterContainer>
       <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
     </FilterContainer>
