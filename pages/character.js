@@ -50,6 +50,7 @@ const HeadingCont = styled.div`
   width:100%;
   align-items:center;
   justify-content:center;  
+  padding-left: 10px;
 `
 
 const BottomBarCont = styled.div `
@@ -63,6 +64,12 @@ const BottomBarCont = styled.div `
   background-color:#FB0A40;
   z-index:20;
   bottom:0px;
+`
+const FilterType = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding-left: 20px;
 `
 
 const FilterContainer = styled.div`
@@ -176,24 +183,30 @@ export default function Character() {
     </TopBarCont>
     <HeadingCont>
       <ChooseCategory category='character!'/>
-      <FilterContainer>
-        <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
-        <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
-        <ButtonFilter text="Name" onFilterClick={()=>setFilter("Character")}/>
-        <ButtonFilter text="Acceleration" onFilterClick={()=>setFilter("Acceleration")}/>
-      </FilterContainer>
-      <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
-      <FilterContainer>
-        <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
-      </FilterContainer>
-      <br></br>
-      <FilterContainer>
-        <ButtonFilter onFilterClick={(e)=>inputFilter(e.target.value)} text={"Apply"} />
-      </FilterContainer>
     </HeadingCont>
 
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
+    </FilterType>
     
+    <FilterContainer>
+      <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
+      <ButtonFilter text="Name" onFilterClick={()=>setFilter("Character")}/>
+      <ButtonFilter text="Acceleration" onFilterClick={()=>setFilter("Acceleration")}/>
+    </FilterContainer>
+    
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
+    </FilterType>
 
+    <FilterContainer>
+      <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
+    </FilterContainer>
+    <br></br>
+    <FilterContainer>
+      <ButtonFilter onFilterClick={(e)=>inputFilter(e.target.value)} text={"Apply"} />
+    </FilterContainer>
+  
     <CardCont>
       {data.map((o,i)=>
         <div>
