@@ -85,12 +85,14 @@ export default function Fav() {
   const {theme} = useTheme();
 
   const HandleDeleteC = (obj) => {
-      const c_obj = {
-        ...favC
-      }
+    const c_obj = {
+      ...favC
+    }
 
-      delete c_obj[obj] 
-      setFavC(c_obj) 
+    delete c_obj[obj.id] 
+    setFavC(c_obj) 
+
+    alert('deleted')
 }
 
 
@@ -197,7 +199,7 @@ export default function Fav() {
       </CardCont> 
         <DeleteZone   
           onDropItem={(item)=>{
-            HandleDeleteC()
+            HandleDeleteC(item)
           }}
         >
         </DeleteZone>
