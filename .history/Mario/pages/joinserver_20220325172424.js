@@ -81,8 +81,8 @@ export default function Sockets() {
           width:10,
           height:10,
           left:o.left,
-          top:o.top,
-          borderRadius:100
+          top:o.top
+          border
         }}/>
       )}
       <input type='text' onChange={(e)=>setInputPin(e.target.value)}/>

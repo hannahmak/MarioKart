@@ -260,9 +260,8 @@ export default function Glider() {
         left:o.left,
         top:o.top,
         zIndex:10,
-        borderRadius:100,
       }}/>
-    )}
+)}
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>

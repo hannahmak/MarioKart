@@ -250,19 +250,6 @@ export default function Glider() {
     const colors = ["green", "yellow", "blue", "red", "purple"]
 
   return ( 
-    <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
-    {Object.values(users).map((o,i)=>
-      <div style={{
-        background:colors[i%5],
-        position:"relative",
-        width:10,
-        height:10,
-        left:o.left,
-        top:o.top,
-        zIndex:10,
-        borderRadius:100,
-      }}/>
-    )}
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>

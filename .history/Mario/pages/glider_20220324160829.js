@@ -6,7 +6,6 @@ import { useFilter } from '../utils/provider';
 import { useFavG } from '../utils/provider';
 import { text } from '../utils/variable';
 import { useTheme } from '../utils/provider';
-import { io } from "socket.io-client";
 
 //component
 import Card from '../comps/Card'
@@ -249,20 +248,7 @@ export default function Glider() {
     
     const colors = ["green", "yellow", "blue", "red", "purple"]
 
-  return ( 
-    <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
-    {Object.values(users).map((o,i)=>
-      <div style={{
-        background:colors[i%5],
-        position:"relative",
-        width:10,
-        height:10,
-        left:o.left,
-        top:o.top,
-        zIndex:10,
-        borderRadius:100,
-      }}/>
-    )}
+  return ( <Container>
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>

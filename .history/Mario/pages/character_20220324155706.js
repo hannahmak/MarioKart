@@ -5,7 +5,6 @@ import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavC } from '../utils/provider';
 import { useTheme } from '../utils/provider';
-import { io } from "socket.io-client";
 
 //components
 import Card from '../comps/Card'
@@ -171,20 +170,7 @@ export default function Character() {
   }
 
   const {theme, setTheme} = useTheme();
-  return (
-    <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
-    {Object.values(users).map((o,i)=>
-      <div style={{
-        background:colors[i%5],
-        position:"relative",
-        width:10,
-        height:10,
-        left:o.left,
-        top:o.top,
-        zIndex:10,
-        borderRadius:100,
-      }}/>
-    )}
+  return ( <Container>
     <TopBarCont>
       <TopMenu link='./'/>
     </TopBarCont>

@@ -2,16 +2,16 @@ import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { useFilter } from '../utils/provider';
-import { useFavW } from '../utils/provider';
-import ax from 'axios';
+import { useFavV } from '../utils/provider';
+import ax from 'axios'
 import { useTheme } from '../utils/provider';
 import { text } from '../utils/variable';
 import { io } from "socket.io-client";
 
 //components
 import Card from '../comps/Card'
-import TopMenu from '../comps/TopMenu'
 import ChooseCategory from '../comps/ChooseCategory'
+import TopMenu from '../comps/TopMenu'
 import BottomBar from '../comps/BottomBar'
 import ButtonFilter from '../comps/ButtonFilter'
 
@@ -77,30 +77,30 @@ const FilterHeading =  styled.h2`
   color:${props=>props.filterheadingcolor};
 `
 
-export default function Tire() {
+export default function Body() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
-  const {favW, setFavW} = useFavW();
+  const {favV, setFavV} = useFavV();
 
-  const [sbti, setSBTI] = useState(false) //sort by tire
+  const [sbv, setSBV] = useState(false) //sort by vehicle
   const [sbs, setSBS] = useState(false) //sort by speed
-  const [sbh, setSBH] =  useState(false) //sort by handling
-  const [sbt, setSBT] = useState(false) //sort by traction
+  const [sba, setSBA] =  useState(false) //sort by acceleration
+  const [sbmt, setSBMT] = useState(false) //sort by mini turbo
 
   const [sbr_type, setSBRType] = useState("asc")
 
   const inputFilter = async(name)=>{
 
-    if(filter === 'Body'){
-      setSBTI(true)
+    if(filter === 'Vehicle'){
+      setSBV(true)
       setSBS(false)
-      setSBH(false)
-      setSBT(false)
+      setSBA(false)
+      setSBMT(false)
       console.log(filter)
-      const res = await ax.get("/api/tires", {
+      const res = await ax.get("/api/bodies", {
         params: {
           txt: name,
-          sort_tire:sbti,
+          sort_kart:sbv,
           sort_type:sbr_type
         }
       })
@@ -108,12 +108,12 @@ export default function Tire() {
     } 
 
     if(filter === 'Speed'){
-      setSBTI(false)
+      setSBV(false)
       setSBS(true)
-      setSBH(false)
-      setSBT(false)
+      setSBA(false)
+      setSBMT(false)
       console.log(filter)
-      const res = await ax.get("/api/tires", {
+      const res = await ax.get("/api/bodies", {
         params: {
           txt: name,
           sort_speed:sbs,
@@ -123,32 +123,32 @@ export default function Tire() {
       setData(res.data)
     } 
 
-    if(filter === 'Handling'){
-      setSBTI(false)
+    if(filter === 'Acceleration'){
+      setSBV(false)
       setSBS(false)
-      setSBH(true)
-      setSBT(false)
+      setSBA(true)
+      setSBMT(false)
       console.log(filter)
-      const res = await ax.get("/api/tires", {
+      const res = await ax.get("/api/bodies", {
         params: {
           txt: name,
-          sort_handling:sbh,
+          sort_acceleration:sba,
           sort_type:sbr_type
         }
       })
       setData(res.data)
     } 
 
-    if(filter === 'Traction'){
-      setSBTI(false)
+    if(filter === 'MiniTurbo'){
+      setSBV(false)
       setSBS(false)
-      setSBH(false)
-      setSBT(true)
+      setSBA(false)
+      setSBMT(true)
       console.log(filter)
-      const res = await ax.get("/api/tires", {
+      const res = await ax.get("/api/bodies", {
         params: {
           txt: name,
-          sort_traction:sbt,
+          sort_miniturbo:sbmt,
           sort_type:sbr_type
         }
       })
@@ -156,102 +156,97 @@ export default function Tire() {
     } 
   }
 
-
-
   useEffect(()=>{
     const GetBody = async()=>{
-      const resp = await ax.get("/api/tires");
+      const resp = await ax.get("/api/bodies")
       setData(resp.data)
     }
-
-    GetBody();
+    GetBody()
   }, [])
 
   const StoreFav = (checked, obj) => {
     //store the favourites to be used on the next page
     console.log(checked, obj)
     if(checked){
-      const W_obj = {
-        ...favW 
+      const V_obj = {
+        ...favV 
       };
-      W_obj[obj.Body] = obj;
-      setFavW(W_obj);
+      V_obj[obj.Vehicle] = obj;
+      setFavV(V_obj);
     } else {
-      const W_obj = {
-        ...favW
+      const V_obj = {
+        ...favV
       }
-      delete W_obj[obj.Body]
-      setFavW(W_obj)
+      delete V_obj[obj.Vehicle]
+      setFavV(V_obj)
     }
   }
-
   const {theme, setTheme} = useTheme();
-    //multiplayer
-    const [mySoc, setMySoc] = useState(null);
-    const [msgs, setMsgs] = useState([]);
-  
-    const [mousePos, setMousePos] = useState({
-      left:0,
-      top:0
-    })
-  
-    const [users, setUsers] = useState({});
-  
-    const [inputPin, setInputPin] = useState("");
-  
-    useEffect(()=>{
-      // const socket = io("ws://example.com/my-namespace", {
-      //   reconnectionDelayMax: 10000,
-      //   auth: {
-      //     token: "123"
-      //   },
-      //   query: {
-      //     "my-key": "my-value"
-      //   }
-      // });
-      
-      const socket = io(`http://localhost:8888`);
-  
-      socket.on("user_connected", (users)=>{
-        setUsers(users);
-        })
-  
-      socket.on("change", (id)=>{
-        // alert(`${id} has connected`)
-  
-        //messages
-        setMsgs((prev)=>[
-          ...prev,
-          `${id} has joined the server`
-        ])
-      });
-  
-      socket.on("update_mouse", (x, y, id)=>{
-        // setMousePos({
-        //   left:x,
-        //   top:y
-        // })
-        setUsers((prev)=>({
-          ...prev,
-          [id]:{left:x, top:y}
-        }))
-      })
-  
-      setMySoc(socket)
-    }, [])
-  
-    const SendToIO = async () => {
-      mySoc.emit("alert_all", inputPin)
-    }
-  
-    const MouseMoveUpdate = async (x, y) => {
-      mySoc.emit("mouse_moved", x, y)
-    }
-    
-    const colors = ["green", "yellow", "blue", "red", "purple"]
 
-  return ( 
+  //multiplayer
+  const [mySoc, setMySoc] = useState(null);
+  const [msgs, setMsgs] = useState([]);
+
+  const [mousePos, setMousePos] = useState({
+    left:0,
+    top:0
+  })
+
+  const [users, setUsers] = useState({});
+
+  const [inputPin, setInputPin] = useState("");
+
+  useEffect(()=>{
+    // const socket = io("ws://example.com/my-namespace", {
+    //   reconnectionDelayMax: 10000,
+    //   auth: {
+    //     token: "123"
+    //   },
+    //   query: {
+    //     "my-key": "my-value"
+    //   }
+    // });
+    
+    const socket = io(`http://localhost:8888`);
+
+    socket.on("user_connected", (users)=>{
+      setUsers(users);
+      })
+
+    socket.on("change", (id)=>{
+      // alert(`${id} has connected`)
+
+      //messages
+      setMsgs((prev)=>[
+        ...prev,
+        `${id} has joined the server`
+      ])
+    });
+
+    socket.on("update_mouse", (x, y, id)=>{
+      // setMousePos({
+      //   left:x,
+      //   top:y
+      // })
+      setUsers((prev)=>({
+        ...prev,
+        [id]:{left:x, top:y}
+      }))
+    })
+
+    setMySoc(socket)
+  }, [])
+
+  const SendToIO = async () => {
+    mySoc.emit("alert_all", inputPin)
+  }
+
+  const MouseMoveUpdate = async (x, y) => {
+    mySoc.emit("mouse_moved", x, y)
+  }
   
+  const colors = ["green", "yellow", "blue", "red", "purple"]
+  return ( 
   <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
           {Object.values(users).map((o,i)=>
         <div style={{
@@ -262,23 +257,22 @@ export default function Tire() {
           left:o.left,
           top:o.top,
           zIndex:10,
-          borderRadius:100
+          borderRadius:
         }}/>
       )}
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>
     <HeadingCont>
-      <ChooseCategory category='tire!'/>
+      <ChooseCategory/>
     </HeadingCont>
-
 
     <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
     <FilterContainer>
-      <ButtonFilter text="Name" onFilterClick={()=>setFilter("Body")}/>
+      <ButtonFilter text="Vehicle" onFilterClick={()=>setFilter("Vehicle")}/>
       <ButtonFilter text="Speed" onFilterClick={()=>setFilter("Speed")}/>
-      <ButtonFilter text="Handling" onFilterClick={()=>setFilter("Handling")}/>
-      <ButtonFilter text="Traction" onFilterClick={()=>setFilter("Traction")}/>
+      <ButtonFilter text="Acceleration" onFilterClick={()=>setFilter("Acceleration")}/>
+      <ButtonFilter text="Mini Turbo" onFilterClick={()=>setFilter("MiniTurbo")}/>
     </FilterContainer>
     <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
     <FilterContainer>
@@ -288,42 +282,43 @@ export default function Tire() {
     <FilterContainer>
       <ButtonFilter onFilterClick={(e)=>inputFilter(e.target.value)} text={"Apply"} />
     </FilterContainer>
-    
-    <CardCont>
-    {data.map((o,i)=>
-    <div>
-    <Card 
-      key={i}
-      bgcolor={o.Color}
 
-      //front card
-      title={'Tires'}
-      name={o.Body}
-      img={o.Image}
-      height={'94.72'}
-      width={'148px'}
-      
-      //back card
-      cat1={'Speed'}
-      val1={o.Speed}
-      cat2={'Handling'}
-      val2={o.Handling}
-      cat3={'Traction'}
-      val3={o.Traction}
-    />
-    <input type="checkbox"
+    <CardCont>
+      {data.map((o,i)=>
+      <div>
+        <Card 
+          key={i} 
+          bgcolor={o.Color}
+
+          //front card
+          title={'Kart'}
+          name={o.Vehicle}
+          img={o.Image}
+          height={'94.72'}
+          width={'148px'}
+
+          //back card
+          cat1={'Speed'}
+          val1={o.Speed}
+          cat2={'Acceleration'}
+          val2={o.Acceleration}
+          cat3={'Mini Turbo'}
+          val3={o.MiniTurbo}
+        />
+        <input type="checkbox"
         checked={
-          favW[o.Body] !== undefined && favW[o.Body] !== null
+          favV[o.Vehicle] !== undefined && favV[o.Vehicle] !== null
           //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
         }
         onChange={(e)=>StoreFav(e.target.checked, o)}
         />
-    </div>
-    )}
+        </div>
+      )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar nextlink='/glider'/>
+      <BottomBar nextlink='/tire'/>
     </BottomBarCont>
+  
   </Container>
   )
 }

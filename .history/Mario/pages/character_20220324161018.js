@@ -5,7 +5,6 @@ import ax from 'axios'
 import { useFilter } from '../utils/provider';
 import { useFavC } from '../utils/provider';
 import { useTheme } from '../utils/provider';
-import { io } from "socket.io-client";
 
 //components
 import Card from '../comps/Card'

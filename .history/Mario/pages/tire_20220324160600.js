@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 import { useEffect } from 'react'
 import { useState } from 'react'
-import ax from 'axios'
 import { useFilter } from '../utils/provider';
-import { useFavG } from '../utils/provider';
-import { text } from '../utils/variable';
+import { useFavW } from '../utils/provider';
+import ax from 'axios';
 import { useTheme } from '../utils/provider';
+import { text } from '../utils/variable';
 import { io } from "socket.io-client";
 
-//component
+//components
 import Card from '../comps/Card'
 import TopMenu from '../comps/TopMenu'
 import ChooseCategory from '../comps/ChooseCategory'
@@ -77,78 +77,78 @@ const FilterHeading =  styled.h2`
   color:${props=>props.filterheadingcolor};
 `
 
-export default function Glider() {
+export default function Tire() {
   const [data, setData] = useState([])
   const {filter, setFilter} = useFilter()
-  const {favG, setFavG} = useFavG();
+  const {favW, setFavW} = useFavW();
 
-  const [sbg, setSBG] = useState(false) //sort by glider
-  const [sbk, setSBK] = useState(false) //sort by kind 
-  const [sbw, setSBW] =  useState(false) //sort by weight
-  const [sbas, setSBAS] = useState(false) //sort by airspeed
+  const [sbti, setSBTI] = useState(false) //sort by tire
+  const [sbs, setSBS] = useState(false) //sort by speed
+  const [sbh, setSBH] =  useState(false) //sort by handling
+  const [sbt, setSBT] = useState(false) //sort by traction
 
   const [sbr_type, setSBRType] = useState("asc")
 
   const inputFilter = async(name)=>{
 
     if(filter === 'Body'){
-      setSBG(true)
-      setSBK(false)
-      setSBW(false)
-      setSBAS(false)
+      setSBTI(true)
+      setSBS(false)
+      setSBH(false)
+      setSBT(false)
       console.log(filter)
-      const res = await ax.get("/api/gliders", {
+      const res = await ax.get("/api/tires", {
         params: {
           txt: name,
-          sort_glider:sbg,
+          sort_tire:sbti,
           sort_type:sbr_type
         }
       })
       setData(res.data)
     } 
 
-    if(filter === 'Type'){
-      setSBG(false)
-      setSBK(true)
-      setSBW(false)
-      setSBAS(false)
+    if(filter === 'Speed'){
+      setSBTI(false)
+      setSBS(true)
+      setSBH(false)
+      setSBT(false)
       console.log(filter)
-      const res = await ax.get("/api/gliders", {
+      const res = await ax.get("/api/tires", {
         params: {
           txt: name,
-          sort_kind:sbk,
+          sort_speed:sbs,
           sort_type:sbr_type
         }
       })
       setData(res.data)
     } 
 
-    if(filter === 'Weight'){
-      setSBG(false)
-      setSBK(false)
-      setSBW(true)
-      setSBAS(false)
+    if(filter === 'Handling'){
+      setSBTI(false)
+      setSBS(false)
+      setSBH(true)
+      setSBT(false)
       console.log(filter)
-      const res = await ax.get("/api/gliders", {
+      const res = await ax.get("/api/tires", {
         params: {
           txt: name,
-          sort_weight:sbw,
+          sort_handling:sbh,
           sort_type:sbr_type
         }
       })
       setData(res.data)
     } 
 
-    if(filter === 'SpeedAir'){
-      setSBG(false)
-      setSBK(false)
-      setSBW(false)
-      setSBAS(true)
+    if(filter === 'Traction'){
+      setSBTI(false)
+      setSBS(false)
+      setSBH(false)
+      setSBT(true)
       console.log(filter)
-      const res = await ax.get("/api/gliders", {
+      const res = await ax.get("/api/tires", {
         params: {
           txt: name,
-          sort_airspeed:sbas,
+          sort_traction:sbt,
           sort_type:sbr_type
         }
       })
@@ -156,35 +156,36 @@ export default function Glider() {
     } 
   }
 
+
+
   useEffect(()=>{
-    const GetGliders = async()=>{
-      const resp = await ax.get("/api/gliders");
+    const GetBody = async()=>{
+      const resp = await ax.get("/api/tires");
       setData(resp.data)
     }
 
-    GetGliders()
+    GetBody();
   }, [])
 
   const StoreFav = (checked, obj) => {
     //store the favourites to be used on the next page
     console.log(checked, obj)
     if(checked){
-      const G_obj = {
-        ...favG 
+      const W_obj = {
+        ...favW 
       };
-      G_obj[obj.Body] = obj;
-      setFavG(G_obj);
+      W_obj[obj.Body] = obj;
+      setFavW(W_obj);
     } else {
-      const G_obj = {
-        ...favG
+      const W_obj = {
+        ...favW
       }
-      delete G_obj[obj.Body]
-      setFavG(G_obj)
+      delete W_obj[obj.Body]
+      setFavW(W_obj)
     }
   }
 
   const {theme, setTheme} = useTheme();
-
     //multiplayer
     const [mySoc, setMySoc] = useState(null);
     const [msgs, setMsgs] = useState([]);
@@ -249,33 +250,21 @@ export default function Glider() {
     
     const colors = ["green", "yellow", "blue", "red", "purple"]
 
-  return ( 
-    <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
-    {Object.values(users).map((o,i)=>
-      <div style={{
-        background:colors[i%5],
-        position:"relative",
-        width:10,
-        height:10,
-        left:o.left,
-        top:o.top,
-        zIndex:10,
-        borderRadius:100,
-      }}/>
-    )}
+  return ( <Container>
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>
     <HeadingCont>
-      <ChooseCategory category='glider!'/>
+      <ChooseCategory category='tire!'/>
     </HeadingCont>
+
 
     <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
     <FilterContainer>
-      <ButtonFilter text="Type" onFilterClick={()=>setFilter("Type")}/>
-      <ButtonFilter text="Weight" onFilterClick={()=>setFilter("Weight")}/>
-      <ButtonFilter text="Speed Air" onFilterClick={()=>setFilter("SpeedAir")}/>
-      <ButtonFilter text="Body" onFilterClick={()=>setFilter("Body")}/>
+      <ButtonFilter text="Name" onFilterClick={()=>setFilter("Body")}/>
+      <ButtonFilter text="Speed" onFilterClick={()=>setFilter("Speed")}/>
+      <ButtonFilter text="Handling" onFilterClick={()=>setFilter("Handling")}/>
+      <ButtonFilter text="Traction" onFilterClick={()=>setFilter("Traction")}/>
     </FilterContainer>
     <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
     <FilterContainer>
@@ -285,33 +274,32 @@ export default function Glider() {
     <FilterContainer>
       <ButtonFilter onFilterClick={(e)=>inputFilter(e.target.value)} text={"Apply"} />
     </FilterContainer>
-
+    
     <CardCont>
     {data.map((o,i)=>
     <div>
-      <Card
-        key={i}
-        bgcolor={o.Color}
+    <Card 
+      key={i}
+      bgcolor={o.Color}
 
-
-        //front card
-        title='Glider'
-        name={o.Body}
-        img={o.Image}
-        height={'94.72'}
-        width={'148px'}
-
-        //back card
-        cat1={'Type'} 
-        val1={o.Type}
-        cat2={'Weight'}
-        val2={o.Weight}
-        cat3={'Air Speed'}
-        val3={o.SpeedAir}
-      />
-      <input type="checkbox"
+      //front card
+      title={'Tires'}
+      name={o.Body}
+      img={o.Image}
+      height={'94.72'}
+      width={'148px'}
+      
+      //back card
+      cat1={'Speed'}
+      val1={o.Speed}
+      cat2={'Handling'}
+      val2={o.Handling}
+      cat3={'Traction'}
+      val3={o.Traction}
+    />
+    <input type="checkbox"
         checked={
-          favG[o.Body] !== undefined && favG[o.Body] !== null
+          favW[o.Body] !== undefined && favW[o.Body] !== null
           //Object.keys(fav).indexOf(o.bookID.toString()) !== -1
         }
         onChange={(e)=>StoreFav(e.target.checked, o)}
@@ -320,7 +308,7 @@ export default function Glider() {
     )}
     </CardCont>
     <BottomBarCont>
-      <BottomBar nextlink='/favourites'/>
+      <BottomBar nextlink='/glider'/>
     </BottomBarCont>
   </Container>
   )

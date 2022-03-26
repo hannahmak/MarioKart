@@ -6,7 +6,6 @@ import { useFavW } from '../utils/provider';
 import ax from 'axios';
 import { useTheme } from '../utils/provider';
 import { text } from '../utils/variable';
-import { io } from "socket.io-client";
 
 //components
 import Card from '../comps/Card'
@@ -186,85 +185,8 @@ export default function Tire() {
   }
 
   const {theme, setTheme} = useTheme();
-    //multiplayer
-    const [mySoc, setMySoc] = useState(null);
-    const [msgs, setMsgs] = useState([]);
-  
-    const [mousePos, setMousePos] = useState({
-      left:0,
-      top:0
-    })
-  
-    const [users, setUsers] = useState({});
-  
-    const [inputPin, setInputPin] = useState("");
-  
-    useEffect(()=>{
-      // const socket = io("ws://example.com/my-namespace", {
-      //   reconnectionDelayMax: 10000,
-      //   auth: {
-      //     token: "123"
-      //   },
-      //   query: {
-      //     "my-key": "my-value"
-      //   }
-      // });
-      
-      const socket = io(`http://localhost:8888`);
-  
-      socket.on("user_connected", (users)=>{
-        setUsers(users);
-        })
-  
-      socket.on("change", (id)=>{
-        // alert(`${id} has connected`)
-  
-        //messages
-        setMsgs((prev)=>[
-          ...prev,
-          `${id} has joined the server`
-        ])
-      });
-  
-      socket.on("update_mouse", (x, y, id)=>{
-        // setMousePos({
-        //   left:x,
-        //   top:y
-        // })
-        setUsers((prev)=>({
-          ...prev,
-          [id]:{left:x, top:y}
-        }))
-      })
-  
-      setMySoc(socket)
-    }, [])
-  
-    const SendToIO = async () => {
-      mySoc.emit("alert_all", inputPin)
-    }
-  
-    const MouseMoveUpdate = async (x, y) => {
-      mySoc.emit("mouse_moved", x, y)
-    }
-    
-    const colors = ["green", "yellow", "blue", "red", "purple"]
 
-  return ( 
-  
-  <Container onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
-          {Object.values(users).map((o,i)=>
-        <div style={{
-          background:colors[i%5],
-          position:"relative",
-          width:10,
-          height:10,
-          left:o.left,
-          top:o.top,
-          zIndex:10,
-          borderRadius:100
-        }}/>
-      )}
+  return ( <Container>
     <TopBarCont>
       <TopMenu/>
     </TopBarCont>
