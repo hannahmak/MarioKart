@@ -35,7 +35,7 @@ export default function Character() {
       <Header>Pick Your Players</Header>
       <SubHeader>Pick by yourself or with friends</SubHeader>
 
-      <Link href="/multiplayer">
+      <Link href="/character">
       <div> <PlayerSelect src="/Single_Toad.png" color="black" text="Singleplayer"></PlayerSelect></div>
       </Link>
 
