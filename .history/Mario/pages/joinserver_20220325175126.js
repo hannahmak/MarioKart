@@ -73,7 +73,8 @@ export default function Sockets() {
   
   const colors = ["green", "yellow", "blue", "red", "purple"]
   return (
-    <div>
+    <div onMouseMove={(e)=>MouseMoveUpdate(e.clientX, e.clientY)}>
+      )}
       <input type='text' onChange={(e)=>setInputPin(e.target.value)}/>
       <button onClick={SendToIO}>Join</button>
       {msgs.map((o,i)=><div style={{background:"red", padding:10}}>
