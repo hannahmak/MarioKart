@@ -33,6 +33,9 @@ width:100%;
 height:100vh;
 gap:100px;
 `
+
+
+
 export default function Multiplayer() {
   const [show, setShow] = useState(false)
 

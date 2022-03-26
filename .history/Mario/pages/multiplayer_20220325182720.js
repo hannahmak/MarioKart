@@ -33,19 +33,23 @@ width:100%;
 height:100vh;
 gap:100px;
 `
+
+
+
 export default function Multiplayer() {
   const [show, setShow] = useState(false)
 
-  function showPin(){
-    setShow(true);
+  function toggle(){
+    se
   }
+
   const {theme} = useTheme();
   return ( <Container>
       <Link href="/joinserver">
       <button>Join Server</button>
       </Link>
-      <button onClick={showPin}>Generate Pin</button>
-      <div style={{display: show?"block":"none"}}>http://3d0e-2604-3d08-4a85-d700-9cac-5070-b3ab-1046.ngrok.io</div>
+      <button>Generate Pin</button>
+      <div show={setShow}>http://3d0e-2604-3d08-4a85-d700-9cac-5070-b3ab-1046.ngrok.io</div>
   </Container>
   )
 }

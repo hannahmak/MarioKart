@@ -22,7 +22,6 @@ align-items:center;
 
 //components
 import Card from '../comps/Card'
-import { display } from '@mui/system'
 
 const Container = styled.div`
 display:flex;
@@ -33,19 +32,23 @@ width:100%;
 height:100vh;
 gap:100px;
 `
-export default function Multiplayer() {
-  const [show, setShow] = useState(false)
 
-  function showPin(){
-    setShow(true);
+
+
+export default function Multiplayer() {
+  const [load, setLoad] = useState(false)
+
+  if(load === false) {
+    document.getElementById('code').style.display = 'none'
   }
+
   const {theme} = useTheme();
   return ( <Container>
       <Link href="/joinserver">
       <button>Join Server</button>
       </Link>
-      <button onClick={showPin}>Generate Pin</button>
-      <div style={{display: show?"block":"none"}}>http://3d0e-2604-3d08-4a85-d700-9cac-5070-b3ab-1046.ngrok.io</div>
+      <button onClick={setLoad(true)}>Generate Pin</button>
+      <div id='code'>http://3d0e-2604-3d08-4a85-d700-9cac-5070-b3ab-1046.ngrok.io</div>
   </Container>
   )
 }
