@@ -48,7 +48,8 @@ const HeadingCont = styled.div`
   flex-direction:column;
   width:100%;
   align-items:center;
-  justify-content:center;
+  justify-content:center;  
+  padding-left: 10px;
 `
 
 const BottomBarCont = styled.div `
@@ -62,6 +63,13 @@ const BottomBarCont = styled.div `
   background-color:#FB0A40;
   z-index:20;
   bottom:0px;
+`
+
+const FilterType = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding-left: 20px;
 `
 
 const FilterContainer = styled.div`
@@ -189,14 +197,21 @@ export default function Body() {
       <ChooseCategory/>
     </HeadingCont>
 
-    <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Filter By</FilterHeading>
+    </FilterType>
+
     <FilterContainer>
       <ButtonFilter text="Vehicle" onFilterClick={()=>setFilter("Vehicle")}/>
       <ButtonFilter text="Speed" onFilterClick={()=>setFilter("Speed")}/>
       <ButtonFilter text="Acceleration" onFilterClick={()=>setFilter("Acceleration")}/>
       <ButtonFilter text="Mini Turbo" onFilterClick={()=>setFilter("MiniTurbo")}/>
     </FilterContainer>
-    <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
+
+    <FilterType>
+      <FilterHeading filterheadingcolor={text[theme].textcolor}>Sort By</FilterHeading>
+    </FilterType>
+    
     <FilterContainer>
       <ButtonFilter onFilterClick={()=>setSBRType(sbr_type == "asc"?"desc":"asc")} text={sbr_type == "asc" ? "Ascending" : "Decending"} />
     </FilterContainer>
